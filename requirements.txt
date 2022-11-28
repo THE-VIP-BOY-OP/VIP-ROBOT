@@ -49,7 +49,7 @@ spongemock
 sqlalchemy==1.4.42
 telegram
 telegraph
-telethon==1.25.4
+telethon==1.26.0
 TruthDarePy
 TgCrypto
 ujson
