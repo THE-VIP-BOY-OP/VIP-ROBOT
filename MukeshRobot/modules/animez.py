@@ -243,8 +243,8 @@ def anime(update: Update, context: CallbackContext):
         if trailer:
             buttons = [
                 [
-                    InlineKeyboardButton("⍟ ᴍᴏʀᴇ ɪɴғᴏ ⍟", url=info),
-                    InlineKeyboardButton("⍟ ᴛʀᴀɪʟᴇʀ ⍟", url=trailer),
+                    InlineKeyboardButton("♦️ᴍᴏʀᴇ ɪɴғᴏ♦️", url=info),
+                    InlineKeyboardButton("🏓ᴛʀᴀɪʟᴇʀ🏓", url=trailer),
                 ]
             ]
         else:
@@ -554,6 +554,7 @@ __help__ = """
  ❍ /kayo <ᴀɴɪᴍᴇ>*:* sᴇᴀʀᴄʜ ᴀɴ ᴀɴɪᴍᴇ ᴏɴ ᴀɴɪᴍᴇᴋᴀʏᴏ.ᴄᴏᴍ
  ❍ /airing <ᴀɴɪᴍᴇ>*:* ʀᴇᴛᴜʀɴs ᴀɴɪᴍᴇ ᴀɪʀɪɴɢ ɪɴғᴏ.
 
+©️ ʙʏ [VIP BOY](https://t.me/the_vip_boy)
 """
 
 ANIME_HANDLER = DisableAbleCommandHandler("anime", anime)
@@ -574,7 +575,7 @@ dispatcher.add_handler(KAIZOKU_SEARCH_HANDLER)
 dispatcher.add_handler(KAYO_SEARCH_HANDLER)
 dispatcher.add_handler(UPCOMING_HANDLER)
 
-__mod_name__ = "⍟ Aɴɪᴍᴇ ⍟"
+__mod_name__ = "💥Aɴɪᴍᴇ💥"
 __command_list__ = [
     "anime",
     "manga",
