@@ -266,7 +266,7 @@ async def apk(e):
         await e.reply("Exception Occured:- " + str(err))
 
 
-__mod_name__ = "⍟ Gᴏᴏɢʟᴇ ⍟"
+__mod_name__ = "🍁Gᴏᴏɢʟᴇ🍁"
 
 __help__ = """
  ❍ /google <text>*:* Perform a google search
@@ -274,4 +274,5 @@ __help__ = """
  ❍ /app <appname>*:* Searches for an app in Play Store and returns its details.
  ❍ /reverse |pp |grs: Does a reverse image search of the media which it was replied to.
 
+☆............𝙱𝚈 » [𝚅𝙸𝙿 𝙱𝙾𝚈](https://t.me/the_vip_boy)............☆
 """
