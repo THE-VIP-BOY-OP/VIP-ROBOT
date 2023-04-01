@@ -472,47 +472,47 @@ def Music_about_callback(update: Update, context: CallbackContext):
                     [
                 InlineKeyboardButton(
                     text="🍁αԃɱιɳ🍁",
-                    callback_data="mukesh_a",
+                    callback_data="Music_1",
                 ),
                 InlineKeyboardButton(
                     text="🔺αυƭɦ🔺",
-                    callback_data="mukesh_2",
+                    callback_data="mukesh_b",
                 ),
             
                 InlineKeyboardButton(
                     text="♨️вℓσ¢к♨️",
-                    callback_data="mukesh_3",
+                    callback_data="mukesh_c",
                 ),
             ],
             [
                 InlineKeyboardButton(
                     text="📣ɠ¢αʂƭ📣",
-                    callback_data="mukesh_4",
+                    callback_data="mukesh_d",
                 ),
                 InlineKeyboardButton(
                     text="🚫ɠɓαɳ🚫",
-                    callback_data="mukesh_5",
+                    callback_data="mukesh_e",
                 ),
                 InlineKeyboardButton(
                     text="🍷ℓყɾเ¢ʂ🍷",
-                    callback_data="mukesh_6",
+                    callback_data="mukesh_f",
                 ),
             ],
             [
                 InlineKeyboardButton(
                     text="🎙️քℓαყℓเʂƭ🎙️",
-                    callback_data="mukesh_7",
+                    callback_data="mukesh_g",
                 ),
                 InlineKeyboardButton(
                     text="🎸ѵσเ¢ε-¢ɦαƭ🎸",
-                    callback_data="mukesh_8",
+                    callback_data="mukesh_h",
                 ),
             ],
             [
            
                 InlineKeyboardButton(
                     text="🕹️ρℓαყ🕹️",
-                    callback_data="mukesh_9",
+                    callback_data="mukesh_i",
                 ),
             
             
@@ -533,7 +533,7 @@ def Music_about_callback(update: Update, context: CallbackContext):
                 ]
             ),
         )
-    elif query.data == "mukesh_a":
+    elif query.data == "Music_1":
         query.message.edit_text(
             text=f"*» ᴀᴅᴍɪɴ ᴄᴏᴍᴍᴀɴᴅꜱ «*"
             f"""
