@@ -19,21 +19,21 @@ PHOTO = [
 
 Mukesh = [
     [
-        InlineKeyboardButton(text="ɴᴏᴏʙ", url=f"tg://user?id={OWNER_ID}"),
-        InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"),
+        InlineKeyboardButton(text="📍𝐎𝐰𝐧𝐞𝐫📍", url=f"tg://user?id={OWNER_ID}"),
+        InlineKeyboardButton(text="🍒𝐆𝐫𝐨𝐮𝐩🍒", url=f"https://t.me/{SUPPORT_CHAT}"),
     ],
     [
         InlineKeyboardButton(
-            text="➕ᴀᴅᴅ ᴍᴇ ᴇʟsᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ➕",
+            text="☆ 𝐀𝐝𝐝 𝐌𝐞 𝐌𝐨𝐢 𝐋𝐮𝐯 ☆",
             url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
         ),
     ],
 ]
 
-lol = "https://telegra.ph/file/7773ebd713f9ba9ae71df.jpg"
+lol = "https://te.legra.ph/file/9219e8d80482856f4bf8e.jpg"
 
 
-@pbot.on_message(filters.command("alive"))
+@pbot.on_message(filters.command("alive", "ping"))
 async def restart(client, m: Message):
     await m.delete()
     accha = await m.reply("⚡")
@@ -54,9 +54,9 @@ async def restart(client, m: Message):
     await asyncio.sleep(2)
     await m.reply_photo(
         lol,
-        caption=f"""**ʜᴇʏ, ɪ ᴀᴍ 『[ɢʀᴏᴜᴘ ᴄᴏɴᴛʀᴏʟʟᴇʀ](f"t.me/{BOT_USERNAME}")』**
+        caption=f"""**🌲𝗬𝗲𝗮𝗵 𝗠𝘆𝘀𝗲𝗹𝗳 『[ɢʀᴏᴜᴘ ᴄᴏɴᴛʀᴏʟʟᴇʀ](t.me/{BOT_USERNAME})』**
    ━━━━━━━━━━━━━━━━━━━
-  » **ᴍʏ ᴏᴡɴᴇʀ :** [ᴍᴜᴋᴇsʜ](tg://user?id={OWNER_ID}))
+  » **ᴍʏ ᴏᴡɴᴇʀ :** [𝗩𝗜𝗣 𝗕𝗢𝗬](https://t.me/the_vip_boy)
   
   » **ʟɪʙʀᴀʀʏ ᴠᴇʀsɪᴏɴ :** `{lver}`
   
@@ -68,9 +68,10 @@ async def restart(client, m: Message):
    ━━━━━━━━━━━━━━━━━━━""",
         reply_markup=InlineKeyboardMarkup(Mukesh),
     )
-__mod_name__ = "⍟ ᴀʟɪᴠᴇ ⍟"
+__mod_name__ = "🍁ᴀʟɪᴠᴇ🍁"
 __help__ = """
- ©️ [ᴍᴜᴋᴇsʜ] (f"tg://user?id={OWNER_ID}"))
+ ©️ ʙʏ [VIP BOY](https://t.me/the_vip_boy)
 
 *ᴜsᴇʀ ᴄᴏᴍᴍᴀɴᴅs*:
 » /alive*:* ᴛᴏ ᴄʜᴇᴀᴋ ❓  ɪ ᴀᴍ ᴀʟɪᴠᴇ ᴏʀ ɴᴏᴛ?"""
+» /ping*:* ᴛᴏ ᴄʜᴇᴀᴋ ❓  ɪ ᴀᴍ ᴀʟɪᴠᴇ ᴏʀ ɴᴏᴛ?"""
