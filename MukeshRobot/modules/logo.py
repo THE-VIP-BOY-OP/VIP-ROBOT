@@ -279,7 +279,7 @@ async def lego(event):
         await telethn.send_file(
             event.chat_id,
             file=fname,
-            caption=f"ʟᴏɢᴏ ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ @{BOT_USERNAME}\n ♥︎ ᴍᴜᴋᴇsʜ ★[ᴅᴇᴠᴇʟᴏᴘᴇʀ](t.me/harmi_Mukesh)\n  ᴍᴜᴋᴇsʜ ʙᴏᴛ ᴢᴏɴᴇ★[ᴜᴘᴅᴀᴛᴇ](t.me/mukeshbotzone)",
+            caption=f"ʟᴏɢᴏ ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ @{BOT_USERNAME}\n ♥︎ ᴍᴜᴋᴇsʜ ★[ᴅᴇᴠᴇʟᴏᴘᴇʀ](t.me/the_vip_boy)\n  ᴍᴜᴋᴇsʜ ʙᴏᴛ ᴢᴏɴᴇ★[ᴜᴘᴅᴀᴛᴇ](t.me/tg_friendss)",
         )
         await pesan.delete()
         if os.path.exists(fname):
@@ -288,11 +288,12 @@ async def lego(event):
         await event.reply(f"ғʟᴏᴏᴅ ᴡᴀɪᴛ ᴇʀʀᴏʀ, ʀᴇᴩᴏʀᴛ ᴛʜɪs ᴀᴛ @{SUPPORT_CHAT}")
 
 
-__mod_name__ = "⍟ ʟᴏɢᴏ ⍟"
+__mod_name__ = "🌀ʟᴏɢᴏ🌀"
 
 __help__ = """
 @{BOT_USERNAME} ᴄᴀɴ ᴄʀᴇᴀᴛᴇ sᴏᴍᴇ ʙᴇᴀᴜᴛɪғᴜʟ ᴀɴᴅ ᴀᴛᴛʀᴀᴄᴛɪᴠᴇ ʟᴏɢᴏ ғᴏʀ ʏᴏᴜʀ ᴘʀᴏғɪʟᴇ ᴘɪᴄs.
- 𝗣𝗼𝘄𝗲𝗿𝗱𝗲𝗱 𝗯𝘆 ♥︎  @Mukeshbotzone
 
 ❍ /logo (Text) *:* ᴄʀᴇᴀᴛᴇ ᴀ ʟᴏɢᴏ ᴏғ ʏᴏᴜʀ ɢɪᴠᴇɴ ᴛᴇxᴛ ᴡɪᴛʜ ʀᴀɴᴅᴏᴍ ᴠɪᴇᴡ.
+
+☆............𝙱𝚈 » [𝚅𝙸𝙿 𝙱𝙾𝚈](https://t.me/the_vip_boy)............☆
 """
