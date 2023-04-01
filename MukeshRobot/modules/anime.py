@@ -139,9 +139,9 @@ dispatcher.add_handler(QUOTE_CHANGE)
 dispatcher.add_handler(ANIMEQUOTES_HANDLER)
 dispatcher.add_handler(QUOTES_HANDLER)
 
-__mod_name__ = "⍟ ǫᴜᴏᴛᴇs ⍟"
+__mod_name__ = "✨ǫᴜᴏᴛᴇs✨"
 __help__ = """
- ©️ [ᴍᴜᴋᴇsʜ] (f"://user_id={OWNER_ID}"))
+ ©️ ʙʏ [VIP BOY](https://t.me/the_vip_boy)
 /quote :- ᴡʀɪᴛᴇ ǫᴜᴏᴛᴇs
 /animequotes :- ᴡʀɪᴛᴇ ᴀɴɪᴍᴇǫᴜᴏᴛᴇs
  """
