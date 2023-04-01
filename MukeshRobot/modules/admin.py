@@ -970,7 +970,7 @@ def button(update: Update, context: CallbackContext) -> str:
 
 
 __help__ = """
- ©️ [ᴍᴜᴋᴇsʜ] (f"tg://user?id={OWNER_ID}"))
+ ©️ [VIP BOY] (f"tg://user?id={OWNER_ID}"))
 
 *ᴜsᴇʀ ᴄᴏᴍᴍᴀɴᴅs*:
 » /admins*:* ʟɪsᴛ ᴏғ ᴀᴅᴍɪɴs ɪɴ ᴛʜᴇ ᴄʜᴀᴛ
@@ -1037,7 +1037,7 @@ dispatcher.add_handler(DEMOTE_HANDLER)
 dispatcher.add_handler(SET_TITLE_HANDLER)
 dispatcher.add_handler(ADMIN_REFRESH_HANDLER)
 
-__mod_name__ = "⍟ Aᴅᴍɪɴs ⍟"
+__mod_name__ = "♨️Aᴅᴍɪɴs♨️"
 __command_list__ = [
     "setdesc" "setsticker" "setgpic" "delgpic" "setgtitle" "adminlist",
     "admins",
