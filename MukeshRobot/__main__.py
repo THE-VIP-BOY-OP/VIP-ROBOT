@@ -585,7 +585,7 @@ def Music_about_callback(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="✯ вα¢к ✯, callback_data="Music_"),
+                        InlineKeyboardButton(text="✯ вα¢к ✯", callback_data="Music_"),
                     ]
                 ]
             ),
