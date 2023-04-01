@@ -143,14 +143,13 @@ def check_afk(update, context, user_id, fst_name, userc_id):
 
 
 __help__ = """
-©️ ʙʏ [VIP BOY](https://t.me/the_vip_boy)
 
 *ᴀᴡᴀʏ ғʀᴏᴍ ɢʀᴏᴜᴘ*
  ❍ /afk <reason>*:* ᴍᴀʀᴋ ʏᴏᴜʀsᴇʟғ ᴀs ᴀғᴋ(ᴀᴡᴀʏ ғʀᴏᴍ ᴋᴇʏʙᴏᴀʀᴅ).
  ❍ ʙʏᴇ <ʀᴇᴀsᴏɴ>*:* sᴀᴍᴇ ᴀs ᴛʜᴇ ᴀғᴋ ᴄᴏᴍᴍᴀɴᴅ - ʙᴜᴛ ɴᴏᴛ ᴀ ᴄᴏᴍᴍᴀɴᴅ.
 ᴡʜᴇɴ ᴍᴀʀᴋᴇᴅ ᴀs ᴀғᴋ, ᴀɴʏ ᴍᴇɴᴛɪᴏɴs ᴡɪʟʟ ʙᴇ ʀᴇᴘʟɪᴇᴅ ᴛᴏ ᴡɪᴛʜ ᴀ ᴍᴇssᴀɢᴇ ᴛᴏ sᴀʏ ʏᴏᴜ'ʀᴇ ɴᴏᴛ ᴀᴠᴀɪʟᴀʙʟᴇ!
  
-©️ Pᴏᴡᴇʀᴇᴅ ʙʏ [VIP CREATORS](https://t.me/vip_creators)
+☆............𝙱𝚈 » [𝚅𝙸𝙿 𝙱𝙾𝚈](https://t.me/the_vip_boy)............☆
 """
 
 AFK_HANDLER = DisableAbleCommandHandler("afk", afk)
