@@ -970,7 +970,7 @@ def button(update: Update, context: CallbackContext) -> str:
 
 
 __help__ = """
- ©️ [VIP BOY] (f"tg://user?id={OWNER_ID}"))
+ ©️ [VIP BOY](https://t.me/the_vip_boy)
 
 *ᴜsᴇʀ ᴄᴏᴍᴍᴀɴᴅs*:
 » /admins*:* ʟɪsᴛ ᴏғ ᴀᴅᴍɪɴs ɪɴ ᴛʜᴇ ᴄʜᴀᴛ
