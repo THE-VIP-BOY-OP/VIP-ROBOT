@@ -472,7 +472,7 @@ def Music_about_callback(update: Update, context: CallbackContext):
                     [
                 InlineKeyboardButton(
                     text="🍁αԃɱιɳ🍁",
-                    callback_data="mukesh_1",
+                    callback_data="mukesh_a",
                 ),
                 InlineKeyboardButton(
                     text="🔺αυƭɦ🔺",
@@ -533,7 +533,7 @@ def Music_about_callback(update: Update, context: CallbackContext):
                 ]
             ),
         )
-    elif query.data == "mukesh_1":
+    elif query.data == "mukesh_a":
         query.message.edit_text(
             text=f"*» ᴀᴅᴍɪɴ ᴄᴏᴍᴍᴀɴᴅꜱ «*"
             f"""
