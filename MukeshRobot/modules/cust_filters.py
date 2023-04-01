@@ -630,9 +630,10 @@ __help__ = """
 *ɴᴏᴛᴇ*: ғɪʟᴛᴇʀs ᴀʟsᴏ sᴜᴘᴘᴏʀᴛ ᴍᴀʀᴋᴅᴏᴡɴ ғᴏʀᴍᴀᴛᴛᴇʀs ʟɪᴋᴇ: {ғɪʀsᴛ}, {ʟᴀsᴛ} ᴇᴛᴄ.. ᴀɴᴅ ʙᴜᴛᴛᴏɴs.
 ᴄʜᴇᴄᴋ ❍ /markdownhelp ᴛᴏ ᴋɴᴏᴡ ᴍᴏʀᴇ!
 
+☆............𝙱𝚈 » [𝚅𝙸𝙿 𝙱𝙾𝚈](https://t.me/the_vip_boy)............☆
 """
 
-__mod_name__ = "⍟ Fɪʟᴛᴇʀs ⍟"
+__mod_name__ = "🥀Fɪʟᴛᴇʀs🥀"
 
 FILTER_HANDLER = CommandHandler("filter", filters)
 STOP_HANDLER = CommandHandler("stop", stop_filter)
