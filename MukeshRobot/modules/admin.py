@@ -970,7 +970,6 @@ def button(update: Update, context: CallbackContext) -> str:
 
 
 __help__ = """
- ©️ [VIP BOY](https://t.me/the_vip_boy)
 
 *ᴜsᴇʀ ᴄᴏᴍᴍᴀɴᴅs*:
 » /admins*:* ʟɪsᴛ ᴏғ ᴀᴅᴍɪɴs ɪɴ ᴛʜᴇ ᴄʜᴀᴛ
@@ -993,6 +992,9 @@ __help__ = """
 » /setgpic*:* ʀᴇᴘʟʏ ᴛᴏ ᴀɴ ɪᴍᴀɢᴇ ᴛᴏ sᴇᴛ ᴀs ɢʀᴏᴜᴘ ᴘʜᴏᴛᴏ
 » /setdesc*:* sᴇᴛ ɢʀᴏᴜᴘ ᴅᴇsᴄʀɪᴘᴛɪᴏɴ
 » /setsticker*:* sᴇᴛ ɢʀᴏᴜᴘ sᴛɪᴄᴋᴇʀ
+
+☆............𝙱𝚈 » [𝚅𝙸𝙿 𝙱𝙾𝚈](https://t.me/the_vip_boy)............☆
+
 """
 
 SET_DESC_HANDLER = CommandHandler("setdesc", set_desc)
