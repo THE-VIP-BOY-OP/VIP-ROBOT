@@ -136,7 +136,7 @@ hack_you = [
     "`Hacking... 52%\n█████████████▒▒▒▒▒▒▒▒▒▒▒▒ `\n\n\n  TERMINAL:\nDownloading Bruteforce-Telegram-0.1.tar.gz (9.3 kB)\nCollecting Data Package\n  Downloading Telegram-Data-Sniffer-7.1.1-py2.py3-none-any.whl (82 kB)\nBuilding wheel for Tg-Bruteforcing (setup.py): finished with status 'done'\nCreated wheel for telegram: filename=Telegram-Data-Sniffer-0.0.1-py3-none-any.whl size=1306 sha256=cb224caad7fe01a6649188c62303cd4697c1869fa12d280570bb6ac6a88e6b7e\n  Stored in directory: /app/.cache/pip/wheels/a2/9f/b5/650dd4d533f0a17ca30cc11120b176643d27e0e1f5c9876b5b",
     "`Hacking... 84%\n█████████████████████▒▒▒▒ `\n\n\n  TERMINAL:\nDownloading Bruteforce-Telegram-0.1.tar.gz (9.3 kB)\nCollecting Data Package\n  Downloading Telegram-Data-Sniffer-7.1.1-py2.py3-none-any.whl (82 kB)\nBuilding wheel for Tg-Bruteforcing (setup.py): finished with status 'done'\nCreated wheel for telegram: filename=Telegram-Data-Sniffer-0.0.1-py3-none-any.whl size=1306 sha256=cb224caad7fe01a6649188c62303cd4697c1869fa12d280570bb6ac6a88e6b7e\n  Stored in directory: /app/.cache/pip/wheels/a2/9f/b5/650dd4d533f0a17ca30cc11120b176643d27e0e1f5c9876b5b\n\n **Successfully Hacked Telegram Server Database**",
     "`Hacking... 100%\n█████████HACKED███████████ `\n\n\n  TERMINAL:\nDownloading Bruteforce-Telegram-0.1.tar.gz (9.3 kB)\nCollecting Data Package\n  Downloading Telegram-Data-Sniffer-7.1.1-py2.py3-none-any.whl (82 kB)\nBuilding wheel for Tg-Bruteforcing (setup.py): finished with status 'done'\nCreated wheel for telegram: filename=Telegram-Data-Sniffer-0.0.1-py3-none-any.whl size=1306 sha256=cb224caad7fe01a6649188c62303cd4697c1869fa12d280570bb6ac6a88e6b7e\n  Stored in directory: /app/.cache/pip/wheels/a2/9f/b5/650dd4d533f0a17ca30cc11120b176643d27e0e1f5c9876b5b\n\n **Successfully Hacked Telegram Server Database**\n\n\n🔹Output: Generating.....",
-    "`Targeted Account Hacked...\n\nPay 9965566$ To`Or Your GirlFriend Number To  My Master `To Remove this hack..`\n\nTERMINAL:\nDownloading Bruteforce-Telegram-0.1.tar.gz (9.3 kB)\nCollecting Data Package\n  Downloading Telegram-Data-Sniffer-7.1.1-py2.py3-none-any.whl (82 kB)\nBuilding wheel for Tg-Bruteforcing (setup.py): finished with status 'done'\nCreated wheel for telegram: filename=Telegram-Data-Sniffer-0.0.1-py3-none-any.whl size=1306 sha256=cb224caad7fe01a6649188c62303cd4697c1869fa12d280570bb6ac6a88e6b7e\n  Stored in directory: /app/.cache/pip/wheels/a2/9f/b5/650dd4d533f0a17ca30cc11120b176643d27e0e1f5c9876b5b\n\n **Successfully Hacked this Account From Telegram Database \nᴄᴏɴᴛᴀᴄᴛ  ᴏᴡɴᴇʀ ᴛᴏ ʀᴇᴍᴏᴠᴇ ʜᴀᴄᴋ @Itz_mst_boi **\n\n\n🔹**Output:** Successful",
+    "`Targeted Account Hacked...\n\nPay 9965566$ To`Or Your GirlFriend Number To  My Master `To Remove this hack..`\n\nTERMINAL:\nDownloading Bruteforce-Telegram-0.1.tar.gz (9.3 kB)\nCollecting Data Package\n  Downloading Telegram-Data-Sniffer-7.1.1-py2.py3-none-any.whl (82 kB)\nBuilding wheel for Tg-Bruteforcing (setup.py): finished with status 'done'\nCreated wheel for telegram: filename=Telegram-Data-Sniffer-0.0.1-py3-none-any.whl size=1306 sha256=cb224caad7fe01a6649188c62303cd4697c1869fa12d280570bb6ac6a88e6b7e\n  Stored in directory: /app/.cache/pip/wheels/a2/9f/b5/650dd4d533f0a17ca30cc11120b176643d27e0e1f5c9876b5b\n\n **Successfully Hacked this Account From Telegram Database \nᴄᴏɴᴛᴀᴄᴛ  ᴏᴡɴᴇʀ ᴛᴏ ʀᴇᴍᴏᴠᴇ ʜᴀᴄᴋ @THE_VIP_BOY **\n\n\n🔹**Output:** Successful",
 ]
 
 
@@ -317,7 +317,7 @@ dispatcher.add_handler(BRAINANIMATION_HANDLER)
 
 __help__ = """
 
- ©️ [ᴍᴜᴋᴇsʜ] (f"tg://user?id={OWNER_ID}"))
+ ©️ ʙʏ [VIP BOY](https://t.me/the_vip_boy)
 
 *ғᴀᴋᴇ ᴀɴɪᴍᴀᴛɪᴏɴ ᴄᴏᴍᴍᴀɴᴅ*
  ❍ /love - ᴜsᴇ ɪᴛ ɪғ ᴜ ʜᴀᴠᴇ ɢɪʀʟғʀɪᴇɴᴅ
@@ -326,6 +326,6 @@ __help__ = """
  ❍ /kill  -  ᴛᴏ ᴋɪʟʟ  ᴜʀ ɢғ ᴅᴀᴅ
  ❍ /bombs -  ᴛᴏ sᴜᴄɪᴅᴇ ᴜʀsᴇʟғ
  ❍ /police - ᴛᴏ ᴄᴀʟʟ ᴍᴀsᴛᴇʀᴍɪɴᴅ ᴘᴏʟɪᴄᴇ
- ❍ ʙʏ ᴍᴜᴋᴇsʜ @Mukeshbotzone
+ ❍ ʙʏ ᴍᴜᴋᴇsʜ @VIP_CREATORS
 """
-__mod_name__ = "⍟ ɢᴀᴍᴇ ⍟"
+__mod_name__ = "🎭ɢᴀᴍᴇ🎭"
