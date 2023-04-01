@@ -86,30 +86,27 @@ PM_START_TEXT = """
 buttons = [
     [
         InlineKeyboardButton(
-            text="❣ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ❣",
+            text="★ 𝐀𝐝𝐝 𝐌𝐞 𝐌𝐨𝐢 𝐋𝐮𝐯 ★ ",
             url=f"https://t.me/{dispatcher.bot.username}?startgroup=true",
         ),
     ],
     [
-        InlineKeyboardButton(text="⚡ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅs⚡", callback_data="help_back"),
+        InlineKeyboardButton(text="🍁𝐆𝐑𝐎𝐔𝐏🍁", url=f"https://t.me/{SUPPORT_CHAT}"),
+        InlineKeyboardButton(text="🥀𝐎𝐅𝐅𝐈𝐂𝐄🥀", url=f"https://t.me/vip_creators"),
     ],
     [
-        InlineKeyboardButton(text="🏡 ᴀʙᴏᴜᴛ 🏡 ", callback_data="mukesh_"),
-        InlineKeyboardButton(text="📍sᴜᴩᴩᴏʀᴛ ᴄʜᴀᴛ📍", url=f"https://t.me/{SUPPORT_CHAT}"),
+        InlineKeyboardButton(text="🤖𝐇𝐄𝐋𝐏🤖", callback_data="help_back"),
+        InlineKeyboardButton(text="🎧𝐌𝐔𝐒𝐈𝐂🎧", callback_data="Music_"),
     ],
     [
-        InlineKeyboardButton(text="🥀ᴅᴇᴠᴇʟᴏᴩᴇʀ🥀", url=f"tg://user?id={OWNER_ID}"),
-        InlineKeyboardButton(text="✨ ᴍᴜsɪᴄ ✨", callback_data="Music_"),
+        InlineKeyboardButton(text="🎭𝐎𝐖𝐍𝐄𝐑🎭 ", url=f"https://t.me/THE_VIP_BOY"),
+        InlineKeyboardButton(text="🌱𝐒𝐎𝐔𝐑𝐂𝐄🌱", url=f"https://github.com/THE-VIP-BOY-OP/VIP-ROBOT",),
     ],
 ]
 
 HELP_STRINGS = f"""
 » {BOT_NAME}  ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴅᴇsᴄʀɪᴘᴛɪᴏɴ ᴀʙᴏᴜᴛ sᴘᴇᴄɪғɪᴄs ᴄᴏᴍᴍᴀɴᴅ"""
 
-DONATE_STRING = """ʜᴇʏ ʙᴀʙʏ,
-  ʜᴀᴩᴩʏ ᴛᴏ ʜᴇᴀʀ ᴛʜᴀᴛ ʏᴏᴜ ᴡᴀɴɴᴀ ᴅᴏɴᴀᴛᴇ.
-
-ʏᴏᴜ ᴄᴀɴ ᴅɪʀᴇᴄᴛʟʏ ᴄᴏɴᴛᴀᴄᴛ ᴍʏ [ᴅᴇᴠᴇʟᴏᴩᴇʀ](f"tg://user?id={OWNER_ID}") ғᴏʀ ᴅᴏɴᴀᴛɪɴɢ ᴏʀ ʏᴏᴜ ᴄᴀɴ ᴠɪsɪᴛ ᴍʏ [sᴜᴩᴩᴏʀᴛ ᴄʜᴀᴛ](f"https://t.me/{SUPPORT_CHAT}") ᴀɴᴅ ᴀsᴋ ᴛʜᴇʀᴇ ᴀʙᴏᴜᴛ ᴅᴏɴᴀᴛɪᴏɴ."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -223,12 +220,15 @@ def start(update: Update, context: CallbackContext):
                 PM_START_TEX.format(usr.first_name), parse_mode=ParseMode.MARKDOWN
             )
             time.sleep(0.4)
-            lol.edit_text("❤")
-            time.sleep(0.5)
             lol.edit_text("⚡")
-            time.sleep(0.3)
+            time.sleep(1)
+            lol.edit_text("🤫")
+            time.sleep(0.5)
+            lol.edit_text("ꜱᴛᴀʀᴛɪɴɢ. ")
+            time.sleep(0.5)
+            lol.edit_text("ꜱᴛᴀʀᴛɪɴɢ.. ")
+            time.sleep(0.5)
             lol.edit_text("ꜱᴛᴀʀᴛɪɴɢ... ")
-            time.sleep(0.4)
             lol.delete()
             
             update.effective_message.reply_text(
