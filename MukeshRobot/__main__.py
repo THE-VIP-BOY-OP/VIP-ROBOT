@@ -476,55 +476,55 @@ def Music_about_callback(update: Update, context: CallbackContext):
                 ),
                 InlineKeyboardButton(
                     text="🔺αυƭɦ🔺",
-                    callback_data="mukesh_b",
+                    callback_data="Music_2",
                 ),
             
                 InlineKeyboardButton(
                     text="♨️вℓσ¢к♨️",
-                    callback_data="mukesh_c",
+                    callback_data="Music_3",
                 ),
             ],
             [
                 InlineKeyboardButton(
                     text="📣ɠ¢αʂƭ📣",
-                    callback_data="mukesh_d",
+                    callback_data="Music_4",
                 ),
                 InlineKeyboardButton(
                     text="🚫ɠɓαɳ🚫",
-                    callback_data="mukesh_e",
+                    callback_data="Music_5",
                 ),
                 InlineKeyboardButton(
                     text="🍷ℓყɾเ¢ʂ🍷",
-                    callback_data="mukesh_f",
+                    callback_data="Music_6",
                 ),
             ],
             [
                 InlineKeyboardButton(
                     text="🎙️քℓαყℓเʂƭ🎙️",
-                    callback_data="mukesh_g",
+                    callback_data="Music_7",
                 ),
                 InlineKeyboardButton(
                     text="🎸ѵσเ¢ε-¢ɦαƭ🎸",
-                    callback_data="mukesh_h",
+                    callback_data="Music_8",
                 ),
             ],
             [
            
                 InlineKeyboardButton(
                     text="🕹️ρℓαყ🕹️",
-                    callback_data="mukesh_i",
+                    callback_data="Music_9",
                 ),
             
             
                 InlineKeyboardButton(
                     text="🍸ʂ𝖚∂σ🍸",
-                    callback_data="mukesh_10",
+                    callback_data="Music_10",
                 ),
             ],
             [
                 InlineKeyboardButton(
                     text="⚜️SƬΛᏒƬ⚜️",
-                    callback_data="mukesh_11",
+                    callback_data="Music_11",
                 ),
             ],
                     [
@@ -565,7 +565,7 @@ def Music_about_callback(update: Update, context: CallbackContext):
                 ]
             ),
         )
-    elif query.data == "mukesh_2 ":
+    elif query.data == "Music_2 ":
         query.message.edit_text(
             text=f"*» 😜 ᴀᴜᴛʜ ᴜsᴇʀs «*"
             f"""
@@ -590,7 +590,7 @@ def Music_about_callback(update: Update, context: CallbackContext):
                 ]
             ),
         )
-    elif query.data == "mukesh_3":
+    elif query.data == "Music_3":
         query.message.edit_text(
             text=f"*» ʙʟᴀᴄᴋʟɪsᴛ ғᴇᴀᴛᴜʀᴇ [ᴏɴʟʏ ғᴏʀ sᴜᴅᴏᴇʀs] «*"
             f""" 🥀ʙʟᴀᴄᴋʟɪsᴛ ᴄʜᴀᴛ🥀
@@ -621,7 +621,7 @@ def Music_about_callback(update: Update, context: CallbackContext):
                 ]
             ),
         )
-    elif query.data == "music_4":
+    elif query.data == "Music_4":
         query.message.edit_text(
             text=f"*» 🍒 ʙʀᴏᴀᴅᴄᴀsᴛ ғᴇᴀᴛᴜʀᴇ [ᴏɴʟʏ ғᴏʀ sᴜᴅᴏᴇʀs] «*"
             f"""
@@ -648,7 +648,7 @@ def Music_about_callback(update: Update, context: CallbackContext):
                 ]
             ),
         )
-    elif query.data == "music_5":
+    elif query.data == "Music_5":
         query.message.edit_text(
             text=f"*» 🤬 ɢʙᴀɴ ғᴇᴀᴛᴜʀᴇ [ᴏɴʟʏ ғᴏʀ sᴜᴅᴏᴇʀs] «*"
             f"""
@@ -670,7 +670,7 @@ def Music_about_callback(update: Update, context: CallbackContext):
                 ]
             ),
         )
-    elif query.data == "music_6":
+    elif query.data == "Music_6":
         query.message.edit_text(
             text=f"*» 😉 ᴇxᴛʀᴀs 😉 «*"
             f"""
@@ -699,7 +699,7 @@ def Music_about_callback(update: Update, context: CallbackContext):
                 ]
             ),
         )
-    elif query.data == "music_7":
+    elif query.data == "Music_7":
         query.message.edit_text(
             text=f"*» 🤨 sᴇʀᴠᴇʀ ᴩʟᴀʏʟɪsᴛs 🤨 «*"
             f"""
@@ -721,7 +721,7 @@ def Music_about_callback(update: Update, context: CallbackContext):
                 ]
             ),
         )
-    elif query.data == "music_8":
+    elif query.data == "Music_8":
         query.message.edit_text(
             text=f"*» ⚡ ᴀᴄᴛɪᴠᴇ ᴠɪᴅᴇᴏᴄʜᴀᴛs ⚡ «*"
             f"""
@@ -741,7 +741,7 @@ def Music_about_callback(update: Update, context: CallbackContext):
                 ]
             ),
         )
-    elif query.data == "music_9":
+    elif query.data == "Music_9":
         query.message.edit_text(
             text=f"*» 💞 ᴩʟᴀʏ ᴄᴏᴍᴍᴀɴᴅs 💞 «*"
             f"""
@@ -767,7 +767,7 @@ def Music_about_callback(update: Update, context: CallbackContext):
                 ]
             ),
         )
-    elif query.data == "music_10":
+    elif query.data == "Music_10":
         query.message.edit_text(
             text=f"*» 🌺 sᴜᴅᴏᴇʀs ᴀɴᴅ ᴏᴡɴᴇʀ ᴄᴏᴍᴍᴀɴᴅs 🌺 «*"
             f"""
