@@ -98,12 +98,14 @@ __help__ = """
  ❍ ⏰ [ᴛɪᴍᴇᴢᴏɴᴇs ʟɪsᴛ](ʜᴛᴛᴘs://ᴇɴ.ᴡɪᴋɪᴘᴇᴅɪᴀ.ᴏʀɢ/ᴡɪᴋɪ/ʟɪsᴛ_ᴏғ_ᴛᴢ_ᴅᴀᴛᴀʙᴀsᴇ_ᴛɪᴍᴇ_ᴢᴏɴᴇs)
 
 💡 ᴇx:- /time ɪɴ *:* ɪᴛ ᴡɪʟʟ sʜᴏᴡs ɪɴᴅɪᴀɴ ᴄᴜʀʀᴇɴᴛ ᴛɪᴍᴇ ᴀɴᴅ ᴅᴀᴛᴇ..
+
+☆............𝙱𝚈 » [𝚅𝙸𝙿 𝙱𝙾𝚈](https://t.me/the_vip_boy)............☆
 """
 
 TIME_HANDLER = DisableAbleCommandHandler("time", gettime)
 
 dispatcher.add_handler(TIME_HANDLER)
 
-__mod_name__ = "⍟ Tɪᴍᴇ ⍟"
+__mod_name__ = "⏲️Tɪᴍᴇ⏲️"
 __command_list__ = ["time"]
 __handlers__ = [TIME_HANDLER]
