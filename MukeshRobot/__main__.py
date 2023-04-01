@@ -1,4 +1,4 @@
-import importlib
+importlib
 import re
 import time
 import asyncio
@@ -1153,7 +1153,7 @@ def main():
         try:
             dispatcher.bot.sendAnimation(
                 f"@{SUPPORT_CHAT}",
-                animation="https://graph.org/file/d874fc40ddf9ead0cad6b.jpg",
+                animation="{START_IMG}",
                 caption=f"""
 ✨ㅤ{dispatcher.bot.first_name} ιѕ αℓινє вαву...
 
