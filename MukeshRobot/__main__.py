@@ -241,20 +241,20 @@ def start(update: Update, context: CallbackContext):
             lol.edit_text("ѕтαятιηg.... ")
             lol.delete()
             
-            update.effective_message.reply_photo(
-            START_IMG,
-               caption=PM_START_TEXT.format(escape_markdown(first_name), BOT_NAME),
-                reply_markup=InlineKeyboardMarkup(buttons),
-                parse_mode=ParseMode.HTML,
-                timeout=60,
-            )
-    else:
-        update.effective_message.reply_text(
+            update.effective_message.reply_text(
                 PM_START_TEXT.format(escape_markdown(first_name), BOT_NAME),
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
             )
+    else:
+        update.effective_message.reply_photo(
+            START_IMG,
+            caption="ɪ ᴀᴍ ᴀʟɪᴠᴇ ʙᴀʙʏ  !\n<b>ɪ ᴅɪᴅɴ'ᴛ sʟᴇᴘᴛ sɪɴᴄᴇ​:</b> <code>{}</code>".format(
+                uptime
+            ),
+            parse_mode=ParseMode.HTML,
+        )
 
 
 def error_handler(update, context):
