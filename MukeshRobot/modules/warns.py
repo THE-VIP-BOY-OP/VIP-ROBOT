@@ -124,7 +124,7 @@ def warn(
             [
                 [
                     InlineKeyboardButton(
-                        "✨ ʀᴇᴍᴏᴠᴇ ✨",
+                        "📍ʀᴇᴍᴏᴠᴇ📍",
                         callback_data="rm_warn({})".format(user.id),
                     ),
                 ],
@@ -528,7 +528,7 @@ __help__ = """
 ☆............𝙱𝚈 » [𝚅𝙸𝙿 𝙱𝙾𝚈](https://t.me/the_vip_boy)............☆
 """
 
-__mod_name__ = "🎄Wᴀʀɴs🎄"
+__mod_name__ = "⚡Wᴀʀɴs⚡"
 
 WARN_HANDLER = CommandHandler(["warn", "dwarn"], warn_user, filters=Filters.group)
 RESET_WARN_HANDLER = CommandHandler(
