@@ -26,7 +26,52 @@ def dt_tom():
     return a
 
 
-today = str(dt()[0])list_of_users.remove(1808943146,5842298151)
+
+           # c1_name = (await pbot.get_users(X)).first_name
+           # c2_name = (await pbot.get_users(Y)).first_name
+           # couple_selection_message = f"""ᴄᴏᴜᴘʟᴇ ғᴏʀ ғᴏʀᴇᴠᴇʀ ❤:
+#[{c1_name}](tg://openmessage?user_id={X}) + [{c2_name}](tg://openmessage?user_id={Y}) = 😘
+
+
+
+__help__ = """
+ᴄʜᴏᴏsᴇ ᴄᴏᴜᴘʟᴇs ɪɴ ʏᴏᴜʀ ᴄʜᴀᴛ
+
+ ❍ /ᴄᴏᴜᴘʟᴇs *:* ᴄʜᴏᴏsᴇ 2 ᴜsᴇʀs ᴀɴᴅ sᴇɴᴅ ᴛʜᴇɪʀ ɴᴀᴍᴇ ᴀs ᴄᴏᴜᴘʟᴇs ɪɴ ʏᴏᴜʀ ᴄʜᴀᴛ.
+
+☆............𝙱𝚈 » [𝚅𝙸𝙿 𝙱𝙾𝚈](https://t.me/the_vip_boy)............☆
+"""
+
+__mod_name__ = "♨️Cᴏᴜᴘʟᴇ♨️"
+import random
+from datetime import datetime
+
+from pyrogram import filters
+from pyrogram.enums import ChatType
+
+from MukeshRobot import pbot,OWNER_ID
+from MukeshRobot.utils.mongo import get_couple, save_couple
+
+# Date and time
+def dt():
+    now = datetime.now()
+    dt_string = now.strftime("%d/%m/%Y %H:%M")
+    dt_list = dt_string.split(" ")
+    return dt_list
+
+
+def dt_tom():
+    a = (
+        str(int(dt()[0].split("/")[0]) + 1)
+        + "/"
+        + dt()[0].split("/")[1]
+        + "/"
+        + dt()[0].split("/")[2]
+    )
+    return a
+
+
+today = str(dt()[0])
 tomorrow = str(dt_tom())
 
 
@@ -39,9 +84,9 @@ async def couple(_, message):
         is_selected = await get_couple(chat_id, today)
         if not is_selected:
             list_of_users = []
-            if list_of_users==1808943146 and 5842298151:
+            if list_of_users==1726528906 and 5910057231:
   
-                list_of_users.remove(1808943146,5842298151)
+                list_of_users.remove(5910057231,1726528906)
             list_of_users.remove(OWNER_ID)
             async for i in pbot.get_chat_members(message.chat.id):
                 if not i.user.is_bot:
@@ -72,8 +117,8 @@ __New couple of the day may be chosen at 12AM {tomorrow}__"""
 __New couple of the day may be chosen at 12AM {tomorrow}__"""
             await pbot.send_message(message.chat.id, text=couple_selection_message)
        # elif is_selected:
-          #  X= int(1808943146)
-           # Y = int(5842298151)
+          #  X= int(5910057231)
+           # Y = int(1726528906)
            # c1_name = (await pbot.get_users(X)).first_name
            # c2_name = (await pbot.get_users(Y)).first_name
            # couple_selection_message = f"""ᴄᴏᴜᴘʟᴇ ғᴏʀ ғᴏʀᴇᴠᴇʀ ❤:
@@ -88,8 +133,8 @@ __help__ = """
 ᴄʜᴏᴏsᴇ ᴄᴏᴜᴘʟᴇs ɪɴ ʏᴏᴜʀ ᴄʜᴀᴛ
 
  ❍ /ᴄᴏᴜᴘʟᴇs *:* ᴄʜᴏᴏsᴇ 2 ᴜsᴇʀs ᴀɴᴅ sᴇɴᴅ ᴛʜᴇɪʀ ɴᴀᴍᴇ ᴀs ᴄᴏᴜᴘʟᴇs ɪɴ ʏᴏᴜʀ ᴄʜᴀᴛ.
-
-☆............𝙱𝚈 » [𝚅𝙸𝙿 𝙱𝙾𝚈](https://t.me/the_vip_boy)............☆
+ 
+ ☆............𝙱𝚈 » [𝚅𝙸𝙿 𝙱𝙾𝚈](https://t.me/the_vip_boy)............☆
 """
 
 __mod_name__ = "♨️Cᴏᴜᴘʟᴇ♨️"
