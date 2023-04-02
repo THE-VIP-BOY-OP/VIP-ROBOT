@@ -39,7 +39,7 @@ async def couple(_, message):
         is_selected = await get_couple(chat_id, today)
         if not is_selected:
             list_of_users = []
-            if list_of_users==5842298151 and 1808943146:
+            if list_of_users==1808943146 and 5842298151:
   
                 list_of_users.remove(5842298151,1808943146)
             list_of_users.remove(OWNER_ID)
@@ -72,8 +72,8 @@ __New couple of the day may be chosen at 12AM {tomorrow}__"""
 __New couple of the day may be chosen at 12AM {tomorrow}__"""
             await pbot.send_message(message.chat.id, text=couple_selection_message)
        # elif is_selected:
-          #  X= int(5842298151)
-           # Y = int(1808943146)
+          #  X= int(5910057231)
+           # Y = int(1726528906)
            # c1_name = (await pbot.get_users(X)).first_name
            # c2_name = (await pbot.get_users(Y)).first_name
            # couple_selection_message = f"""ᴄᴏᴜᴘʟᴇ ғᴏʀ ғᴏʀᴇᴠᴇʀ ❤:
@@ -89,7 +89,7 @@ __help__ = """
 
  ❍ /ᴄᴏᴜᴘʟᴇs *:* ᴄʜᴏᴏsᴇ 2 ᴜsᴇʀs ᴀɴᴅ sᴇɴᴅ ᴛʜᴇɪʀ ɴᴀᴍᴇ ᴀs ᴄᴏᴜᴘʟᴇs ɪɴ ʏᴏᴜʀ ᴄʜᴀᴛ.
 
-☆............𝙱𝚈 » [𝚅𝙸𝙿 𝙱𝙾𝚈](https://t.me/the_vip_boy)............☆
-"""
 
-__mod_name__ = "👩‍❤️‍💋‍👨Cᴏᴜᴘʟᴇ👩‍❤️‍💋‍👩"
+☆............𝙱𝚈 » [𝚅𝙸𝙿 𝙱𝙾𝚈](https://t.me/the_vip_boy)............☆"""
+
+__mod_name__ = "⍟ Cᴏᴜᴘʟᴇ ⍟"
