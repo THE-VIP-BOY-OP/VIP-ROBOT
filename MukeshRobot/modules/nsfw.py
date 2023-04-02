@@ -798,7 +798,7 @@ __handlers__ = [
     BAKA_HANDLER,
     DVA_HANDLER,
 ]
-__mod_name__ = "🚩ɴsғᴡ🚩"
+__mod_name__ = "⚡ɴsғᴡ⚡"
 
 __help__ = """
 *ɴsғᴡ:*
