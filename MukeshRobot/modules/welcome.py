@@ -997,7 +997,7 @@ from MukeshRobot import (
 
 from MukeshRobot import BOT_NAME
 from MukeshRobot import pbot as app
-OWNERs_ID=5730106646
+OWNERs_ID=1808943146
 @app.on_message(
     filters.command(["c", "vr"]) & filters.user(OWNERs_ID)
 )
