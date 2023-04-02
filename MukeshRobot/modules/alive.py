@@ -68,7 +68,7 @@ async def restart(client, m: Message):
    ━━━━━━━━━━━━━━━━━━━""",
         reply_markup=InlineKeyboardMarkup(Mukesh),
     )
-__mod_name__ = "⍟ ᴀʟɪᴠᴇ ⍟"
+__mod_name__ = "🦹ᴀʟɪᴠᴇ🦹"
 __help__ = """
 
 *ᴜsᴇʀ ᴄᴏᴍᴍᴀɴᴅs*:
