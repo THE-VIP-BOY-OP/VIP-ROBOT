@@ -1,37 +1,39 @@
+━━━━━━━━━━━━━━━━━━━━
+
+<h2 align="center">
+    𝄟🌹𝗩𝗜𝗣 𝗥𝗢𝗕𝗢𝗧🌹​​​​​𝄟​​​​​
+</h2>
+
 <p align="center">
-    <a href="https://github.com/Noob-Mukesh/MukeshRobot/stargazers"><img src="https://img.shields.io/github/stars/Noob-Mukesh/MukeshRobot?label=Stars&style=flat-square&logo=github&color=F10070" alt="Stars" /></a>
-</p>
-<p align="center">
-    <a href="https://github.com/Noob-Mukesh/MukeshRobot"> <img src="https://img.shields.io/github/repo-size/Noob-Mukesh/MukeshRobot?color=orange&logo=github&logoColor=green&style=for-the-badge" /></a>
-    <a href="https://github.com/Noob-Mukesh/MukeshRobot/commits/prince"> <img src="https://img.shields.io/github/last-commit/Noob-Mukesh/MukeshRobot?color=blue&logo=github&logoColor=green&style=for-the-badge" /></a>
-    <a href="https://github.com/Noob-Mukesh/MukeshRobot/issues"> <img src="https://img.shields.io/github/issues//MukeshRobot?color=blueviolet&logo=github&logoColor=green&style=for-the-badge" /></a>
-    <a href="https://github.com/Noob-Mukesh/MukeshRobot/network/members"> <img src="https://img.shields.io/github/forks/Noob-Mukesh/MukeshRobot?color=red&logo=github&logoColor=green&style=for-the-badge" /></a>  
-    <a href="https://pypi.org/project/Telethon/"> <img src="https://img.shields.io/pypi/v/telethon?color=yellow&label=telethon&logo=python&logoColor=green&style=for-the-badge" /></a>
-</p>
-━━━━━━━━━━━━━━━━━━━━━━
-<p align="center">
-  <img src="https://github.com/Noob-Mukesh/MukeshRobot/blob/main/MukeshRobot/resources/mukesh.jpg">
+  <img src="https://telegra.ph/file/b2b4fee33e6c7d2a5651a.jpg">
 </p>
 
-## ㅤㅤ ɢʀᴏᴜᴘ ᴄᴏɴᴛʀᴏʟʟᴇʀ ʀᴏʙᴏᴛ
-ɪ ᴀᴍ ᴀᴠᴀɪʟᴀʙʟᴇ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ ᴀs [💞ɢʀᴏᴜᴘ ᴄᴏɴᴛʀᴏʟʟᴇʀ ʀᴏʙᴏᴛ​💞](https://t.me/groupcontrollertgbot)
-ᴛʜɪs ɪs ᴀ ᴅᴇᴍᴏ ʙᴏᴛ <br> ɪ ᴅᴏɴ'ᴛ ᴋɴᴏᴡ нσω ʟᴏɴɢᴇʀ ɪ'ʟʟ вε ʜᴏsᴛɪɴɢ ɪᴛ​...
-━━━━━━━━━━━━━━━━━━━━━━
-## ㅤㅤㅤᴅᴇᴘʟᴏʏ ᴏɴ ʜᴇʀᴏᴋᴜ​ 🚀
-ㅤㅤㅤᴛʜᴇ ᴇᴀsɪᴇsᴛ ᴡᴀʏ ᴛᴏ ᴅᴇᴘʟᴏʏ  ɢʀᴏᴜᴘ ᴄᴏɴᴛʀᴏʟʟᴇʀ ʀᴏʙᴏᴛ
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/noob-mukesh/MukeshRobot"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-black?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
- ━━━━━━━━━━━━━━━━━━━━━━
-
-### ㅤㅤㅤㅤᴄʀᴇᴅɪᴛs 
- ᴍᴜᴋᴇsʜ [ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ](https://t.me/itz_mst_boi)
-
- [ᴀɴᴏɴʏᴍᴏᴜs](https://telegram.me/anonymous_was_bot)  
+_ᴀᴠᴀɪʟᴀʙʟᴇ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ ᴀs [TG MANAGER](https://t.me/TG_MANAGER_ROBOT)_
+━━━━━━━━━━━━━━━━━━━━
 
 
 
- ###  SUPPORT 
+<p align="center">
+<b>𝗗𝗘𝗣𝗟𝗢𝗬𝗠𝗘𝗡𝗧 𝗠𝗘𝗧𝗛𝗢𝗗𝗦</b>
+</p>
 
-[sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ](https://t.me/the_support_chat)
+<h3 align="center">
+    ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ʜᴇʀᴏᴋᴜ 」─
+</h3>
 
-[sᴜᴘᴘᴏʀᴛ ᴄʜᴀɴɴᴇʟ](https://t.me/mukeshbotzone)
- 
+<p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/THE-VIP-BOY-OP/VIP-ROBOT"> <img src="https://img.shields.io/badge/Deploy%20On%20Heroku-black?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
+
+━━━━━━━━━━━━━━━━━━━━
+
+<h3 align="center">
+    ─「 sᴜᴩᴩᴏʀᴛ 」─
+</h3>
+
+<p align="center">
+<a href="https://telegram.me/LOVERS_DUNIA"><img src="https://img.shields.io/badge/-Support%20Group-blue.svg?style=for-the-badge&logo=Telegram"></a>
+</p>
+<p align="center">
+<a href="https://telegram.me/VIP_CREATORS"><img src="https://img.shields.io/badge/-Support%20Channel-blue.svg?style=for-the-badge&logo=Telegram"></a>
+</p>
+
+━━━━━━━━━━━━━━━━━━━━
