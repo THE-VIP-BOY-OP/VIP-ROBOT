@@ -39,7 +39,7 @@ async def bug(_, msg: Message):
     datetimes_fmt = "%d-%m-%Y"
     datetimes = datetime.utcnow().strftime(datetimes_fmt)
 
-    thumb = "https://te.legra.ph/file/3456ab79606ce869180b8.jpg"
+    thumb = "https://graph.org/file/2394ae3aefe35372637bb.mp4"
 
     bug_report = f"""
 **#ʙᴜɢ : ** **tg://user?id={owner_id}**
@@ -118,4 +118,4 @@ __help__ = """
 
 ☆............𝙱𝚈 » [𝚅𝙸𝙿 𝙱𝙾𝚈](https://t.me/the_vip_boy)............☆
 """
-__mod_name__ = "🫖Bᴜɢ🫖"
+__mod_name__ = "⍟ Bᴜɢ ⍟"
