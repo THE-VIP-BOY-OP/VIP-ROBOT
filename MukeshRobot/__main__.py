@@ -1150,7 +1150,7 @@ def main():
         try:
             dispatcher.bot.sendAnimation(
                 f"@{SUPPORT_CHAT}",
-                animation="https://te.legra.ph/file/87993901f66a30c425e55.jpg",
+                animation="https://te.legra.ph/file/731f6b26b2ef1501e35c7.mp4",
                 caption=f"""
 ✨ㅤ{dispatcher.bot.first_name}
 
