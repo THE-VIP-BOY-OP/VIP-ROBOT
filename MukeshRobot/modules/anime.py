@@ -28,7 +28,7 @@ def quotes(update: Update, context: CallbackContext):
     quote, character, anime = anime_quote()
     msg = f"<i>❝{quote}❞</i>\n\n<b>{character} from {anime}</b>"
     keyboard = InlineKeyboardMarkup(
-        [[InlineKeyboardButton(text="Change🔁", callback_data="change_quote")]]
+        [[InlineKeyboardButton(text="📍Change📍", callback_data="change_quote")]]
     )
     message.reply_text(
         msg,
@@ -44,7 +44,7 @@ def change_quote(update: Update, context: CallbackContext):
     quote, character, anime = anime_quote()
     msg = f"<i>❝{quote}❞</i>\n\n<b>{character} from {anime}</b>"
     keyboard = InlineKeyboardMarkup(
-        [[InlineKeyboardButton(text="Change🔁", callback_data="quote_change")]]
+        [[InlineKeyboardButton(text="📍Change📍", callback_data="quote_change")]]
     )
     message.edit_text(msg, reply_markup=keyboard, parse_mode=ParseMode.HTML)
 
@@ -139,9 +139,9 @@ dispatcher.add_handler(QUOTE_CHANGE)
 dispatcher.add_handler(ANIMEQUOTES_HANDLER)
 dispatcher.add_handler(QUOTES_HANDLER)
 
-__mod_name__ = "💦ǫᴜᴏᴛᴇs💦"
+__mod_name__ = "♨️ǫᴜᴏᴛᴇs♨️"
 __help__ = """
- ©️ [ᴍᴜᴋᴇsʜ] (f"://user_id={OWNER_ID}"))
+ ©️ [VIP BOY] (f"://user_id={OWNER_ID}"))
 /quote :- ᴡʀɪᴛᴇ ǫᴜᴏᴛᴇs
 /animequotes :- ᴡʀɪᴛᴇ ᴀɴɪᴍᴇǫᴜᴏᴛᴇs
 
