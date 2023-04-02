@@ -79,7 +79,9 @@ def song(client, message):
         print(e)
 
 
-__mod_name__ = "⍟ Sᴏɴɢ ⍟"
+__mod_name__ = "🎄Sᴏɴɢ🎄"
 __help__ = """
 /song ᴛᴏ  ᴅᴏᴡɴʟᴏᴀᴅ   ᴀɴʏ  sᴏɴɢ 
-/music ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ᴀɴʏ  sᴏɴɢ"""
+/music ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ᴀɴʏ  sᴏɴɢ
+
+☆............𝙱𝚈 » [𝚅𝙸𝙿 𝙱𝙾𝚈](https://t.me/the_vip_boy)............☆"""
