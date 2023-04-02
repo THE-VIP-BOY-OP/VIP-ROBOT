@@ -61,7 +61,7 @@ vi,xh,yi,yo,zh,zh_CN,zh_TW,zu`
 
 ☆............𝙱𝚈 » [𝚅𝙸𝙿 𝙱𝙾𝚈](https://t.me/the_vip_boy)............☆
 """
-__mod_name__ = "🍹Tʀᴀɴs🍹"
+__mod_name__ = "⚡Tʀᴀɴs⚡"
 
 TRANSLATE_HANDLER = DisableAbleCommandHandler(["tr", "tl"], totranslate)
 
