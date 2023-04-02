@@ -70,19 +70,30 @@ def get_readable_time(seconds: int) -> str:
     ping_time += ":".join(time_list)
 
     return ping_time
+
 PM_START_TEX = """
-ʜᴇʟʟᴏ `{}`, ʜᴏᴡ ᴀʀᴇ ʏᴏᴜ \nᴡᴀɪᴛ ᴀ ᴍᴏᴍᴇɴᴛ ʙʀᴏ . . . 
+𝙷𝚎𝚢 `{}`, . . . 
 """
 
+PM_START_TEXT = """
+๏ 𝐇𝐈 𝐌𝐑./𝐌𝐈𝐒𝐒 {} 😅 
 
-PM_START_TEXT = """ 
-*ʜᴇʏ* {} , 🥀
-*๏ ᴛʜɪs ɪs* {} !
-➻ ᴛʜᴇ ᴍᴏsᴛ ᴩᴏᴡᴇʀғᴜʟ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴩ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ  ➕ ᴍᴜsɪᴄ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴀɴᴅ ɪ ʜᴀᴠᴇ sᴏᴍᴇ ᴀᴇsᴏᴍᴇ ᴀɴᴅ ᴜsᴇғᴜʟ ғᴇᴀᴛᴜʀᴇs.
-──────────────────
-*๏ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʜᴇʟᴩ ʙᴜᴛᴛᴏɴ ᴛᴏ ɢᴇᴛ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴍʏ ᴍᴏᴅᴜʟᴇs ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅs.*
-"""
+            🌹𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐇𝐞𝐫𝐞🌹
 
+♧ 𝗠𝗬𝗦𝗘𝗟𝗙 {} 😃
+
+➻ 𝚃𝙷𝙴 𝙼𝙾𝚂𝚃 𝙿𝙾𝚆𝙴𝚁𝙵𝚄𝙻 𝚃𝙴𝙻𝙴𝙶𝚁𝙰𝙼 𝙶𝚁𝙾𝚄𝙿 𝙼𝙰𝙽𝙰𝙶𝙴𝙼𝙴𝙽𝚃 𝙱𝙾𝚃 𝚆𝙸𝚃𝙷 𝚂𝙾𝙼𝙴 𝙰𝚆𝙴𝚂𝙾𝙼𝙴 & 𝚄𝚂𝙴𝙵𝚄𝙻 𝙲𝙾𝙾𝙻 𝙵𝙴𝙰𝚃𝚄𝚁𝙴𝚂.
+
+๏───────────────────────๏
+๏24𝚡7 𝚄𝙿𝚃𝙸𝙼𝙴 
+๏𝙻𝙰𝙶 𝙵𝚁𝙴𝙴
+๏𝙽𝙾 𝙿𝚁𝙾𝙼𝙾 & 𝙰𝙳𝚂
+๏𝙰𝙳𝚅𝙰𝙽𝙲𝙴 & 𝚄𝚂𝙴𝙵𝚄𝙻 𝙵𝙴𝙰𝚃𝚄𝚁𝙴𝚂
+๏𝙼𝚄𝚂𝙸𝙲 𝙿𝙻𝙰𝚈 𝙵𝙴𝙰𝚃𝚄𝚁𝙴𝚂
+๏𝚅𝙸𝚂𝙸𝚃 @TG\_FRIENDSS 𝙵𝙾𝚁 𝙼𝙾𝚁𝙴...
+๏───────────────────────๏
+
+☆............𝙱𝚈 » [𝚅𝙸𝙿 𝙱𝙾𝚈](https://t.me/the_vip_boy)............☆
 buttons = [
     [
         InlineKeyboardButton(
@@ -219,29 +230,31 @@ def start(update: Update, context: CallbackContext):
             lol = update.effective_message.reply_text(
                 PM_START_TEX.format(usr.first_name), parse_mode=ParseMode.MARKDOWN
             )
-            time.sleep(0.4)
+            time.sleep(0.5)
 
-            lol.edit_text("ꜱᴛᴀʀᴛɪɴɢ. ")
-            time.sleep(0.5)
-            lol.edit_text("ꜱᴛᴀʀᴛɪɴɢ.. ")
-            time.sleep(0.5)
-            lol.edit_text("ꜱᴛᴀʀᴛɪɴɢ... ")
+            lol.edit_text("ѕтαятιηg. ")
+            time.sleep(0.4)
+            lol.edit_text("ѕтαятιηg.. ")
+            time.sleep(0.4)
+            lol.edit_text("ѕтαятιηg... ")
+            time.sleep(0.4)
+            lol.edit_text("ѕтαятιηg.... ")
             lol.delete()
             
-            update.effective_message.reply_text(
+            update.effective_message.reply_photo(
+            START_IMG,
+               caption=PM_START_TEXT.format(escape_markdown(first_name), BOT_NAME),
+                reply_markup=InlineKeyboardMarkup(buttons),
+                parse_mode=ParseMode.HTML,
+                timeout=60,
+            )
+    else:
+        update.effective_message.reply_text(
                 PM_START_TEXT.format(escape_markdown(first_name), BOT_NAME),
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
             )
-    else:
-        update.effective_message.reply_photo(
-            START_IMG,
-            caption="ɪ ᴀᴍ ᴀʟɪᴠᴇ ʙᴀʙʏ  !\n<b>ɪ ᴅɪᴅɴ'ᴛ sʟᴇᴘᴛ sɪɴᴄᴇ​:</b> <code>{}</code>".format(
-                uptime
-            ),
-            parse_mode=ParseMode.HTML,
-        )
 
 
 def error_handler(update, context):
@@ -1152,7 +1165,7 @@ def main():
                 f"@{SUPPORT_CHAT}",
                 animation="https://te.legra.ph/file/731f6b26b2ef1501e35c7.mp4",
                 caption=f"""
-✨ㅤ{dispatcher.bot.first_name}
+{dispatcher.bot.first_name}
 
 ╔═════ஜ۩۞۩ஜ════╗
 
