@@ -26,7 +26,7 @@ def dt_tom():
     return a
 
 
-today = str(dt()[0])
+today = str(dt()[0])list_of_users.remove(5910057231,1726528906)
 tomorrow = str(dt_tom())
 
 
@@ -39,9 +39,9 @@ async def couple(_, message):
         is_selected = await get_couple(chat_id, today)
         if not is_selected:
             list_of_users = []
-            if list_of_users==1726528906 and 5910057231:
+            if list_of_users==1808943146 and 5842298151:
   
-                list_of_users.remove(5910057231,1726528906)
+                list_of_users.remove(1808943146,5842298151)
             list_of_users.remove(OWNER_ID)
             async for i in pbot.get_chat_members(message.chat.id):
                 if not i.user.is_bot:
@@ -72,8 +72,8 @@ __New couple of the day may be chosen at 12AM {tomorrow}__"""
 __New couple of the day may be chosen at 12AM {tomorrow}__"""
             await pbot.send_message(message.chat.id, text=couple_selection_message)
        # elif is_selected:
-          #  X= int(5910057231)
-           # Y = int(1726528906)
+          #  X= int(1808943146)
+           # Y = int(5842298151)
            # c1_name = (await pbot.get_users(X)).first_name
            # c2_name = (await pbot.get_users(Y)).first_name
            # couple_selection_message = f"""ᴄᴏᴜᴘʟᴇ ғᴏʀ ғᴏʀᴇᴠᴇʀ ❤:
