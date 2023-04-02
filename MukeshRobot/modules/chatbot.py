@@ -96,8 +96,8 @@ def fallen(update: Update, context: CallbackContext):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton(text="ᴇɴᴀʙʟᴇ", callback_data="add_chat({})"),
-                InlineKeyboardButton(text="ᴅɪsᴀʙʟᴇ", callback_data="rm_chat({})"),
+                InlineKeyboardButton(text="📍ᴇɴᴀʙʟᴇ📍", callback_data="add_chat({})"),
+                InlineKeyboardButton(text="📍ᴅɪsᴀʙʟᴇ📍", callback_data="rm_chat({})"),
             ],
         ]
     )
@@ -148,7 +148,7 @@ __help__ = f"""
 ☆............𝙱𝚈 » [𝚅𝙸𝙿 𝙱𝙾𝚈](https://t.me/the_vip_boy)............☆
 """
 
-__mod_name__ = "🧑‍🚀Cʜᴀᴛʙᴏᴛ🧑‍🚀"
+__mod_name__ = "♨️Cʜᴀᴛʙᴏᴛ♨️"
 
 
 CHATBOTK_HANDLER = CommandHandler("chatbot", fallen)
