@@ -352,7 +352,7 @@ if is_module_loaded(FILENAME):
 ☆............𝙱𝚈 » [𝚅𝙸𝙿 𝙱𝙾𝚈](https://t.me/the_vip_boy)............☆
     """
 
-    __mod_name__ = " 🐉Dɪsᴀʙʟᴇ🐉"
+    __mod_name__ = " ♨️Dɪsᴀʙʟᴇ♨️"
 
 else:
     DisableAbleCommandHandler = CommandHandler
