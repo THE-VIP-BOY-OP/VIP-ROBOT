@@ -19,18 +19,18 @@ PHOTO = [
 
 Mukesh = [
     [
-        InlineKeyboardButton(text="ɴᴏᴏʙ", url=f"tg://user?id={OWNER_ID}"),
-        InlineKeyboardButton(text="ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"),
+        InlineKeyboardButton(text="📍𝐎𝐰𝐧𝐞𝐫📍", url=f"tg://user?id={OWNER_ID}"),
+        InlineKeyboardButton(text="🍒𝐆𝐫𝐨𝐮𝐩🍒", url=f"https://t.me/{SUPPORT_CHAT}"),
     ],
     [
         InlineKeyboardButton(
-            text="➕ᴀᴅᴅ ᴍᴇ ᴇʟsᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ➕",
+            text="☆ 𝐀𝐝𝐝 𝐌𝐞 𝐌𝐨𝐢 𝐋𝐮𝐯 ☆",
             url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
         ),
     ],
 ]
 
-lol = "https://telegra.ph/file/7773ebd713f9ba9ae71df.jpg"
+lol = "https://graph.org/file/d874fc40ddf9ead0cad6b.jpg"
 
 
 @pbot.on_message(filters.command("alive"))
@@ -68,7 +68,7 @@ async def restart(client, m: Message):
    ━━━━━━━━━━━━━━━━━━━""",
         reply_markup=InlineKeyboardMarkup(Mukesh),
     )
-__mod_name__ = "🦹ᴀʟɪᴠᴇ🦹"
+__mod_name__ = "♨️ᴀʟɪᴠᴇ♨️"
 __help__ = """
 
 *ᴜsᴇʀ ᴄᴏᴍᴍᴀɴᴅs*:
