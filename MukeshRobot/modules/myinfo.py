@@ -10,13 +10,13 @@ from MukeshRobot import telethn as tgbot
 from MukeshRobot.events import register
 
 edit_time = 5
-""" =======================𝐌𝐮𝐤𝐞𝐬𝐡 𝐑𝐨𝐛𝐨𝐭====================== """
+""" =======================𝗩𝗜𝗣 𝗥𝗢𝗕𝗢𝗧====================== """
 file1 = "https://telegra.ph/file/9a85d0a873e2dd80d278d.jpg"
 file2 = "https://telegra.ph/file/9e7815284031452afa9e5.jpg"
 file3 = "https://telegra.ph/file/dcc5e003287f69acea368.jpg"
 file4 = "https://telegra.ph/file/ed1ce7fee94f46b0f671e.jpg"
 file5 = "https://telegra.ph/file/701028ce085ecfa961a36.jpg"
-""" =======================𝐌𝐮𝐤𝐞𝐬𝐡 𝐑𝐨𝐛𝐨𝐭====================== """
+""" =======================𝗩𝗜𝗣 𝗥𝗢𝗕𝗢𝗧====================== """
 
 
 @register(pattern="/myinfo")
@@ -65,7 +65,7 @@ async def callback_query_handler(event):
     try:
         boy = event.sender_id
         PRO = await bot.get_entity(boy)
-        LILIE = "ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝐌𝐚𝐬𝐭𝐞𝐫𝐦𝐢𝐧𝐝 𝐍𝐞𝐭𝐰𝐨𝐫𝐤\n\n"
+        LILIE = "ᴘᴏᴡᴇʀᴇᴅ ʙʏ 𝗩𝗜𝗣 𝗕𝗢𝗬\n\n"
         LILIE += f"ғɪʀsᴛ ɴᴀᴍᴇ: {PRO.first_name} \n"
         LILIE += f"ʟᴀsᴛ ɴᴀᴍᴇ: {PRO.last_name}\n"
         LILIE += f"ʏᴏᴜ ʙᴏᴛ : {PRO.bot} \n"
@@ -78,6 +78,8 @@ async def callback_query_handler(event):
 
 
 __command_list__ = ["myinfo"]
-__mod_name__ = "⍟ ɪɴғᴏ ⍟"
+__mod_name__ = "♨️ɪɴғᴏ♨️"
 __help__ = """
- /myinfo  ᴛᴏ ɢᴇᴛ ʏᴏᴜʀ ɪɴғᴏ """
+ /myinfo  ᴛᴏ ɢᴇᴛ ʏᴏᴜʀ ɪɴғᴏ 
+
+☆............𝙱𝚈 » [𝚅𝙸𝙿 𝙱𝙾𝚈](https://t.me/the_vip_boy)............☆"""
