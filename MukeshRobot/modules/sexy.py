@@ -4,7 +4,7 @@ from telethon import Button, events
 
 from .. import telethn as asst
 
-BUTTON = [[Button.url("🍒 ꜱᴜᴘᴘᴏʀᴛ 🍒", "https://t.me/the_support_chat")]]
+BUTTON = [[Button.url("🍒 ꜱᴜᴘᴘᴏʀᴛ 🍒", "https://t.me/TG_FRIENDSS")]]
 HOT = "https://telegra.ph/file/daad931db960ea40c0fca.gif"
 SMEXY = "https://telegra.ph/file/a23e9fd851fb6bc771686.gif"
 LEZBIAN = "https://telegra.ph/file/5609b87f0bd461fc36acb.gif"
@@ -83,6 +83,8 @@ __help__ = """
 ➻ /boob - ᴄʜᴇᴄᴋ ʏᴏᴜʀ ᴄᴜʀʀᴇɴᴛ ʙᴏᴏʙꜱ ꜱɪᴢᴇ
 
 ➻ /cute - ᴄʜᴇᴄᴋ ʏᴏᴜʀ ᴄᴜʀʀᴇɴᴛ ᴄᴜᴛᴇɴᴇꜱꜱ
+
+☆............𝙱𝚈 » [𝚅𝙸𝙿 𝙱𝙾𝚈](https://t.me/the_vip_boy)............☆
 """
 
-__mod_name__ = "⍟ Sᴇᴍxʏ ⍟"
+__mod_name__ = "🥵Sᴇᴍxʏ🥵"
