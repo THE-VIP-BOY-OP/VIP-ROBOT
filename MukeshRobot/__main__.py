@@ -1153,7 +1153,7 @@ def main():
         try:
             dispatcher.bot.sendAnimation(
                 f"@{SUPPORT_CHAT}",
-                animation="{START_IMG}",
+                animation="https://te.legra.ph/file/87993901f66a30c425e55.jpg",
                 caption=f"""
 ✨ㅤ{dispatcher.bot.first_name} ιѕ αℓινє вαву...
 
