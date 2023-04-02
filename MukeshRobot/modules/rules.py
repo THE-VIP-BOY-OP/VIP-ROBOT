@@ -163,7 +163,7 @@ __help__ = """
 ☆............𝙱𝚈 » [𝚅𝙸𝙿 𝙱𝙾𝚈](https://t.me/the_vip_boy)............☆
 """
 
-__mod_name__ = "🎭Rᴜʟᴇs🎭"
+__mod_name__ = "⚡Rᴜʟᴇs⚡"
 
 GET_RULES_HANDLER = CommandHandler("rules", get_rules)
 SET_RULES_HANDLER = CommandHandler("setrules", set_rules)
