@@ -28,7 +28,7 @@ sᴜᴄᴇssғᴜʟʟʏ ᴡʀɪᴛᴛᴇɴ ᴛᴇxᴛ 💘
             photo=req,
             caption=caption,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton("• ᴛᴇʟᴇɢʀᴀᴩʜ •", url=f"{req}")]]
+                [[InlineKeyboardButton("🍁ᴛᴇʟᴇɢʀᴀᴩʜ🍁", url=f"{req}")]]
             ),
         )
     else:
@@ -51,16 +51,18 @@ sᴜᴄᴇssғᴜʟʟʏ ᴡʀɪᴛᴛᴇɴ ᴛᴇxᴛ 💘
             photo=req,
             caption=caption,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton("• ᴛᴇʟᴇɢʀᴀᴩʜ •", url=f"{req}")]]
+                [[InlineKeyboardButton("🌷ᴛᴇʟᴇɢʀᴀᴩʜ🌷", url=f"{req}")]]
             ),
         )
 
 
-__mod_name__ = "⍟ WʀɪᴛᴇTᴏᴏʟ ⍟"
+__mod_name__ = "⚡WʀɪᴛᴇTᴏᴏʟ⚡"
 
 __help__ = """
 
  ᴡʀɪᴛᴇs ᴛʜᴇ ɢɪᴠᴇɴ ᴛᴇxᴛ ᴏɴ ᴡʜɪᴛᴇ ᴘᴀɢᴇ ᴡɪᴛʜ ᴀ ᴘᴇɴ 🖊
 
 ❍ /write <ᴛᴇxᴛ> *:* ᴡʀɪᴛᴇs ᴛʜᴇ ɢɪᴠᴇɴ ᴛᴇxᴛ.
+
+☆............𝙱𝚈 » [𝚅𝙸𝙿 𝙱𝙾𝚈](https://t.me/the_vip_boy)............☆
  """
