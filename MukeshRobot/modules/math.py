@@ -139,7 +139,7 @@ _ᴋᴇᴇᴘ ɪɴ ᴍɪɴᴅ_: ᴛᴏ ғɪɴᴅ ᴛʜᴇ ᴛᴀɴɢᴇɴᴛ ʟ�
 ☆............𝙱𝚈 » [𝚅𝙸𝙿 𝙱𝙾𝚈](https://t.me/the_vip_boy)............☆
 """
 
-__mod_name__ = "🍒Mᴀᴛʜs🍒"
+__mod_name__ = "📍Mᴀᴛʜs📍"
 
 SIMPLIFY_HANDLER = DisableAbleCommandHandler("math", simplify)
 FACTOR_HANDLER = DisableAbleCommandHandler("factor", factor)
