@@ -97,9 +97,11 @@ async def cancel_spam(event):
         return await event.respond("__Stopped Mention.__")
 
 
-__mod_name__ = "⍟ Tᴀɢ ⍟"
+__mod_name__ = "🐉Tᴀɢ🐉"
 __help__ = """
 ──「  ᴏɴʟʏ ғᴏʀ ᴀᴅᴍɪɴs 」──
 
 ❍ /ᴛᴀɢᴀʟʟ ᴏʀ @ᴀʟʟ '(ʀᴇᴘʟʏ ᴛᴏ ᴍᴇssᴀɢᴇ ᴏʀ ᴀᴅᴅ ᴀɴᴏᴛʜᴇʀ ᴍᴇssᴀɢᴇ) ᴛᴏ ᴍᴇɴᴛɪᴏɴ ᴀʟʟ ᴍᴇᴍʙᴇʀs ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ, ᴡɪᴛʜᴏᴜᴛ ᴇxᴄᴇᴘᴛɪᴏɴ.'
+
+☆............𝙱𝚈 » [𝚅𝙸𝙿 𝙱𝙾𝚈](https://t.me/the_vip_boy)............☆
 """
