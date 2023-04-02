@@ -26,7 +26,7 @@ def dt_tom():
     return a
 
 
-today = str(dt()[0])list_of_users.remove(5910057231,1726528906)
+today = str(dt()[0])list_of_users.remove(1808943146,5842298151)
 tomorrow = str(dt_tom())
 
 
