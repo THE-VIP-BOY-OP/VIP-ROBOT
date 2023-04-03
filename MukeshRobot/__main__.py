@@ -463,38 +463,84 @@ def Music_about_callback(update: Update, context: CallbackContext):
     if query.data == "Music_":
         query.message.edit_text(
             text=f"""
- ʜᴇʀᴇ ɪꜱ ʜᴇʟᴘ ᴍᴇɴᴜ ꜰᴏʀ ᴍᴜꜱɪᴄ 
-""",
-            parse_mode=ParseMode.MARKDOWN,
-            disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup(
+ ʜᴇʀᴇ ɪꜱ ʜᴇʟᴘ ᴍᴇɴᴜtext=f"""
+👀𝐇𝐞𝐲 𝐁𝐚𝐛𝐲 🖤\n\n🌺𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐓𝐨 {0} 🍷\n\n🌹𝐈 𝐀𝐦 𝐀𝐧 📀 𝐀𝐝𝐯𝐚𝐧𝐜𝐞𝐝 🎭 𝐀𝐧𝐝 🌱 𝐒𝐮𝐩𝐞𝐫𝐟𝐚𝐬𝐭 🌼 𝐕𝐂 🍄 𝐏𝐥𝐚𝐲𝐞𝐫 📣 𝐖𝐢𝐭𝐡 🕙 24𝐱7 🌀 𝐀𝐜𝐭𝐢𝐯𝐞 » 𝐅𝐨𝐫 🗨️ 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦 ♨️ 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 🎸 𝐀𝐧𝐝 🏓 𝐆𝐫𝐨𝐮𝐩𝐬 🎻\n\n💐𝐅𝐞𝐞𝐥 😍 𝐋𝐚𝐠 📍 𝐅𝐫𝐞𝐞 😇 𝐓𝐨 🕊️ 𝐀𝐝𝐝 𝐌𝐞 𝐈𝐧 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩 🤖 𝐀𝐧𝐝 🩸 𝐄𝐧𝐣𝐨𝐲 ❥︎ 𝐒𝐮𝐩𝐞𝐫 💥 𝐇𝐢𝐠𝐡 💫 𝐐𝐮𝐚𝐥𝐢𝐭𝐲 🦞 𝐀𝐮𝐝𝐢𝐨 🎧 𝐀𝐧𝐝 🔊 𝐕𝐢𝐝𝐞𝐨 🌷\n\n📡 𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐁𝐲:- [𝐕𝐈𝐏☆𝐁𝐎𝐘](https://t.me/the_vip_boy) 💞**
+""", 
+           parse_mode=ParseMode.MARKDOWN,
+           disable_web_page_preview=True, 
+           reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(
-                            text="⍟ ᴀᴅᴍɪɴ ⍟", callback_data="Music_admin"
-                        ),
-                        InlineKeyboardButton(
-                            text="⍟ ᴘʟᴀʏ ⍟", callback_data="Music_play"
-                        ),
-                    ],
+                InlineKeyboardButton(
+                    text="🍁αԃɱιɳ🍁",
+                    callback_data="Music_1",
+                ),
+                InlineKeyboardButton(
+                    text="🔺αυƭɦ🔺",
+                    callback_data="Music_2",
+                ),
+            
+                InlineKeyboardButton(
+                    text="♨️вℓσ¢к♨️",
+                    callback_data="Music_3",
+                ),
+            ],
+            [
+                InlineKeyboardButton(
+                    text="📣ɠ¢αʂƭ📣",
+                    callback_data="Music_4",
+                ),
+                InlineKeyboardButton(
+                    text="🚫ɠɓαɳ🚫",
+                    callback_data="Music_5",
+                ),
+                InlineKeyboardButton(
+                    text="🍷ℓყɾเ¢ʂ🍷",
+                    callback_data="Music_6",
+                ),
+            ],
+            [
+                InlineKeyboardButton(
+                    text="🎙️քℓαყℓเʂƭ🎙️",
+                    callback_data="Music_7",
+                ),
+                InlineKeyboardButton(
+                    text="🎸ѵσเ¢ε-¢ɦαƭ🎸",
+                    callback_data="Music_8",
+                ),
+            ],
+            [
+           
+                InlineKeyboardButton(
+                    text="🕹️ρℓαყ🕹️",
+                    callback_data="Music_9",
+                ),
+            
+            
+                InlineKeyboardButton(
+                    text="🍸ʂ𝖚∂σ🍸",
+                    callback_data="Music_10",
+                ),
+            ],
+            [
+                InlineKeyboardButton(
+                    text="⚜️SƬΛᏒƬ⚜️",
+                    callback_data="Music_11",
+                ),
+            ],
                     [
-                        InlineKeyboardButton(text="⍟ ʙᴏᴛ ⍟", callback_data="Music_bot"),
-                        InlineKeyboardButton(
-                            text="⍟ ᴇxᴛʀᴀ ⍟",
-                            callback_data="Music_extra",
-                        ),
-                    ],
-                    [
-                        InlineKeyboardButton(text="◁", callback_data="mukesh_back"),
+                        InlineKeyboardButton(text="✯ вα¢к ✯", callback_data="mukesh_back"),
                     ],
                 ]
             ),
         )
-    elif query.data == "Music_admin":
+    elif query.data == "Music_1":
         query.message.edit_text(
-            text=f"*» ᴀᴅᴍɪɴ ᴄᴏᴍᴍᴀɴᴅꜱ «*"
+            text=f"*» 🎄ᴀᴅᴍɪɴ ᴄᴏᴍᴍᴀɴᴅꜱ🎄 «*"
             f"""
-ᴊᴜsᴛ ᴀᴅᴅ *ᴄ* ɪɴ ᴛʜᴇ sᴛᴀʀᴛɪɴɢ ᴏғ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅs ᴛᴏ ᴜsᴇ ᴛʜᴇᴍ ғᴏʀ ᴄʜᴀɴɴᴇʟ.
+
+
+ᴊᴜsᴛ ᴀᴅᴅ ᴄ ɪɴ ᴛʜᴇ sᴛᴀʀᴛɪɴɢ ᴏғ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅs ᴛᴏ ᴜsᴇ ᴛʜᴇᴍ ғᴏʀ ᴄʜᴀɴɴᴇʟ.
 
 /pause : ᴩᴀᴜsᴇ ᴛʜᴇ ᴄᴜʀʀᴇɴᴛ ᴩʟᴀʏɪɴɢ sᴛʀᴇᴀᴍ.
 
@@ -504,9 +550,7 @@ def Music_about_callback(update: Update, context: CallbackContext):
 
 /end ᴏʀ /stop : ᴄʟᴇᴀʀs ᴛʜᴇ ǫᴜᴇᴜᴇ ᴀɴᴅ ᴇɴᴅ ᴛʜᴇ ᴄᴜʀʀᴇɴᴛ ᴩʟᴀʏɪɴɢ sᴛʀᴇᴀᴍ.
 
-/player : ɢᴇᴛ ᴀ ɪɴᴛᴇʀᴀᴄᴛɪᴠᴇ ᴩʟᴀʏᴇʀ ᴩᴀɴᴇʟ.
-
-/queue : sʜᴏᴡs ᴛʜᴇ ǫᴜᴇᴜᴇᴅ ᴛʀᴀᴄᴋs ʟɪsᴛ.
+/player : ɢᴇᴛ ᴀ ɪɴᴛᴇʀᴀᴄᴛɪᴠᴇ ᴩʟᴀʏᴇʀ ᴩᴀɴᴇʟ..
 """,
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
