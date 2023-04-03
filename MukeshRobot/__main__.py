@@ -71,7 +71,7 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 PM_START_TEX = """
-ʜᴇʟʟᴏ `{}`, ʜᴏᴡ ᴀʀᴇ ʏᴏᴜ \nᴡᴀɪᴛ ᴀ ᴍᴏᴍᴇɴᴛ ʙʀᴏ . . . 
+🍷𝐖𝐞𝐥𝐜𝐨𝐦𝐞 `{}`, 🍷 
 """
 
 
@@ -86,7 +86,7 @@ PM_START_TEXT = """
 ╚═════════════════❍⊱❁۪۪
       ╔═════ஜ۩۞۩ஜ════╗
 
-       ♨️𝗠𝗔𝗗𝗘 𝗕𝗬[ ѵเρ☆вσყ ](https://t.me/the_vip_boy)♨️
+      ♨️𝗠𝗔𝗗𝗘 𝗕𝗬 𝗩𝗜𝗣 𝗕𝗢𝗬♨️
     
       ╚═════ஜ۩۞۩ஜ════╝
 
@@ -94,27 +94,27 @@ PM_START_TEXT = """
 
 💐𝐅𝐞𝐞𝐥 😍 𝐋𝐚𝐠 📍 𝐅𝐫𝐞𝐞 😇 𝐓𝐨 🕊️ 𝐀𝐝𝐝 𝐌𝐞 𝐈𝐧 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩 🤖 𝐀𝐧𝐝 🩸 𝐄𝐧𝐣𝐨𝐲 ❥︎ 𝐒𝐮𝐩𝐞𝐫 💥 𝐇𝐢𝐠𝐡 💫 𝐐𝐮𝐚𝐥𝐢𝐭𝐲 ⚡ 𝐌𝐚𝐧𝐚𝐠𝐢𝐧𝐠-𝐆𝐫𝐨𝐮𝐩 &   𝐏𝐥𝐚𝐲 🦞 𝐀𝐮𝐝𝐢𝐨 🎧 𝐀𝐧𝐝 🔊 𝐕𝐢𝐝𝐞𝐨 🌷
 
-📡 𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐁𝐲:- [ ѵเρ☆вσყ ](https://t.me/the_vip_boy) 💞
+📡 𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐁𝐲:- @THE\_VIP\_BOY 💞
 
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="❣ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ❣",
+            text="☆ 𝐀𝐝𝐝 𝐌𝐞 𝐌𝐨𝐢 𝐋𝐮𝐯 ☆",
             url=f"https://t.me/{dispatcher.bot.username}?startgroup=true",
         ),
     ],
     [
-        InlineKeyboardButton(text="⚡ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅs⚡", callback_data="help_back"),
+        InlineKeyboardButton(text="🌼𝐇𝐄𝐋𝐏🌼", callback_data="help_back"),
+        InlineKeyboardButton(text="🍷𝐌𝐔𝐒𝐈𝐂🍷", callback_data="Music_"),
     ],
     [
-        InlineKeyboardButton(text="🏡 ᴀʙᴏᴜᴛ 🏡 ", callback_data="mukesh_"),
-        InlineKeyboardButton(text="📍sᴜᴩᴩᴏʀᴛ ᴄʜᴀᴛ📍", url=f"https://t.me/{SUPPORT_CHAT}"),
+        InlineKeyboardButton(text="🌷𝐆𝐑𝐎𝐔𝐏🌷", url=f"https://t.me/{SUPPORT_CHAT}"),
+        InlineKeyboardButton(text="🏡𝐎𝐅𝐅𝐈𝐂𝐄🏡", url=f"https://t.me/VIP_CREATORS"),
     ],
     [
-        InlineKeyboardButton(text="🥀ᴅᴇᴠᴇʟᴏᴩᴇʀ🥀", url=f"tg://user?id={OWNER_ID}"),
-        InlineKeyboardButton(text="✨ ᴍᴜsɪᴄ ✨", callback_data="Music_"),
+        InlineKeyboardButton(text="🌱𝐒𝐎𝐔𝐑𝐂𝐄🌱", callback_data="mukesh_"),
     ],
 ]
 
@@ -238,11 +238,11 @@ def start(update: Update, context: CallbackContext):
                 PM_START_TEX.format(usr.first_name), parse_mode=ParseMode.MARKDOWN
             )
             time.sleep(0.4)
-            lol.edit_text("❤")
-            time.sleep(0.5)
-            lol.edit_text("⚡")
-            time.sleep(0.3)
-            lol.edit_text("ꜱᴛᴀʀᴛɪɴɢ... ")
+            lol.edit_text("𝐒𝐭𝐚𝐫𝐭𝐢𝐧𝐠.")
+            time.sleep(0.4)
+            lol.edit_text("𝐒𝐭𝐚𝐫𝐭𝐢𝐧𝐠..")
+            time.sleep(0.4)
+            lol.edit_text("𝐒𝐭𝐚𝐫𝐭𝐢𝐧𝐠... ")
             time.sleep(0.4)
             lol.delete()
             
@@ -394,69 +394,27 @@ def Mukesh_about_callback(update: Update, context: CallbackContext):
             text=f"*ʜᴇʏ,*🥀\n  *ᴛʜɪs ɪs {dispatcher.bot.first_name}*"
             "\n*ᴀ ᴘᴏᴡᴇʀꜰᴜʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ➕ ᴍᴜsɪᴄ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴜɪʟᴛ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴇᴀꜱɪʟʏ ᴀɴᴅ ᴛᴏ ᴘʀᴏᴛᴇᴄᴛ ʏᴏᴜʀ ɢʀᴏᴜᴘ ꜰʀᴏᴍ ꜱᴄᴀᴍᴍᴇʀꜱ ᴀɴᴅ ꜱᴘᴀᴍᴍᴇʀꜱ.*"
             "\n*ᴡʀɪᴛᴛᴇɴ ɪɴ ᴩʏᴛʜᴏɴ ᴡɪᴛʜ sǫʟᴀʟᴄʜᴇᴍʏ ᴀɴᴅ ᴍᴏɴɢᴏᴅʙ ᴀs ᴅᴀᴛᴀʙᴀsᴇ.*"
-            "\n\n────────────────────"
-            f"\n*➻ ᴜᴩᴛɪᴍᴇ »* {uptime}"
-            f"\n*➻ ᴜsᴇʀs »* {sql.num_users()}"
-            f"\n*➻ ᴄʜᴀᴛs »* {sql.num_chats()}"
-            "\n────────────────────"
-            "\n\n➲  ɪ ᴄᴀɴ ʀᴇꜱᴛʀɪᴄᴛ ᴜꜱᴇʀꜱ."
+            "\n➲  ɪ ᴄᴀɴ ʀᴇꜱᴛʀɪᴄᴛ ᴜꜱᴇʀꜱ."
             "\n➲  ɪ ʜᴀᴠᴇ ᴀɴ ᴀᴅᴠᴀɴᴄᴇᴅ ᴀɴᴛɪ-ꜰʟᴏᴏᴅ ꜱʏꜱᴛᴇᴍ."
             "\n➲  ɪ ᴄᴀɴ ɢʀᴇᴇᴛ ᴜꜱᴇʀꜱ ᴡɪᴛʜ ᴄᴜꜱᴛᴏᴍɪᴢᴀʙʟᴇ ᴡᴇʟᴄᴏᴍᴇ ᴍᴇꜱꜱᴀɢᴇꜱ ᴀɴᴅ ᴇᴠᴇɴ ꜱᴇᴛ ᴀ ɢʀᴏᴜᴘ'ꜱ ʀᴜʟᴇꜱ."
             "\n➲  ɪ ᴄᴀɴ ᴡᴀʀɴ ᴜꜱᴇʀꜱ ᴜɴᴛɪʟ ᴛʜᴇʏ ʀᴇᴀᴄʜ ᴍᴀx ᴡᴀʀɴꜱ, ᴡɪᴛʜ ᴇᴀᴄʜ ᴘʀᴇᴅᴇꜰɪɴᴇᴅ ᴀᴄᴛɪᴏɴꜱ ꜱᴜᴄʜ ᴀꜱ ʙᴀɴ, ᴍᴜᴛᴇ, ᴋɪᴄᴋ, ᴇᴛᴄ."
             "\n➲  ɪ ʜᴀᴠᴇ ᴀ ɴᴏᴛᴇ ᴋᴇᴇᴘɪɴɢ ꜱʏꜱᴛᴇᴍ, ʙʟᴀᴄᴋʟɪꜱᴛꜱ, ᴀɴᴅ ᴇᴠᴇɴ ᴘʀᴇᴅᴇᴛᴇʀᴍɪɴᴇᴅ ʀᴇᴘʟɪᴇꜱ ᴏɴ ᴄᴇʀᴛᴀɪɴ ᴋᴇʏᴡᴏʀᴅꜱ."
-            f"\n\n➻ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴs ɢɪᴠᴇɴ ʙᴇʟᴏᴡ ғᴏʀ ɢᴇᴛᴛɪɴɢ ʙᴀsɪᴄ ʜᴇʟᴩ ᴀɴᴅ ɪɴғᴏ ᴀʙᴏᴜᴛ {dispatcher.bot.first_name}.",
+            "\n\n☆............𝙱𝚈 » [𝚅𝙸𝙿 𝙱𝙾𝚈](https://t.me/the_vip_boy)............☆
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
-                            text="🚩sᴜᴩᴩᴏʀᴛ🚩", callback_data="mukesh_support"
+                            text="📍𝐎𝐖𝐍𝐄𝐑📍", url=f"https://t.me/THE_VIP_BOY"
                         ),
                         InlineKeyboardButton(
-                            text="✨ᴄᴏᴍᴍᴀɴᴅs✨", callback_data="help_back"
-                        ),
-                    ],
-                    [
-                        InlineKeyboardButton(
-                            text="👨‍💻ᴅᴇᴠᴇʟᴏᴩᴇʀ👨‍💻", url=f"tg://user?id={OWNER_ID}"
-                        ),
-                        InlineKeyboardButton(
-                            text="🥀sᴏᴜʀᴄᴇ🥀",
-                            url="https://github.com/noob-mukesh/MukeshRobot",
+                            text="🎄𝐑𝐄𝐏𝐎🎄", 
+                            url="https://github.com/THE-VIP-BOY-OP/VIP-ROBOT",
                         ),
                     ],
                     [
                         InlineKeyboardButton(text="◁", callback_data="mukesh_back"),
-                    ],
-                ]
-            ),
-        )
-    elif query.data == "mukesh_support":
-        query.message.edit_text(
-            text="||*๏ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴs ɢɪᴠᴇɴ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ʜᴇʟᴩ ᴀɴᴅ ᴍᴏʀᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴍᴇ.||*"
-            f"\n\nɪғ ʏᴏᴜ ғᴏᴜɴᴅ ᴀɴʏ ʙᴜɢ ɪɴ {dispatcher.bot.first_name} ᴏʀ ɪғ ʏᴏᴜ ᴡᴀɴɴᴀ ɢɪᴠᴇ ғᴇᴇᴅʙᴀᴄᴋ ᴀʙᴏᴜᴛ ᴛʜᴇ {dispatcher.bot.first_name}, ᴩʟᴇᴀsᴇ ʀᴇᴩᴏʀᴛ ɪᴛ ᴀᴛ sᴜᴩᴩᴏʀᴛ ᴄʜᴀᴛ.",
-            parse_mode=ParseMode.MARKDOWN,
-            reply_markup=InlineKeyboardMarkup(
-                [
-                    [
-                        InlineKeyboardButton(
-                            text="🚩sᴜᴩᴩᴏʀᴛ🚩", url=f"https://t.me/{SUPPORT_CHAT}"
-                        ),
-                        InlineKeyboardButton(
-                            text="💗ᴜᴩᴅᴀᴛᴇs💓", url=f"https://t.me/mukeshbotzone"
-                        ),
-                    ],
-                    [
-                        InlineKeyboardButton(
-                            text="🥀ᴅᴇᴠᴇʟᴏᴩᴇʀ🥀", url=f"tg://user?id={OWNER_ID}"
-                        ),
-                        InlineKeyboardButton(
-                            text="✨ɢɪᴛʜᴜʙ✨", url="https://github.com/noob-mukesh"
-                        ),
-                    ],
-                    [
-                        InlineKeyboardButton(text="◁", callback_data="mukesh_"),
                     ],
                 ]
             ),
@@ -905,7 +863,10 @@ def Music_about_callback(update: Update, context: CallbackContext):
 
 /authorize [ᴄʜᴀᴛ ɪᴅ] : ᴀʟʟᴏᴡs ᴀ ᴄʜᴀᴛ ғᴏʀ ᴜsɪɴɢ ᴛʜᴇ ʙᴏᴛ.
 /unauthorize [ᴄʜᴀᴛ ɪᴅ] : ᴅɪsᴀʟʟᴏᴡs ᴛʜᴇ ᴀʟʟᴏᴡᴇᴅ ᴄʜᴀᴛ.
-/authorized : sʜᴏᴡs ᴛʜᴇ ʟɪsᴛ ᴏғ ᴀʟʟᴏᴡᴇᴅ ᴄʜᴀᴛs.""",
+/authorized : sʜᴏᴡs ᴛʜᴇ ʟɪsᴛ ᴏғ ᴀʟʟᴏᴡᴇᴅ ᴄʜᴀᴛs.
+
+☆............𝙱𝚈 » [𝚅𝙸𝙿 𝙱𝙾𝚈](https://t.me/the_vip_boy)............☆
+""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -942,7 +903,7 @@ def get_help(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text=" ʜᴇʟᴘ ​",
+                                text="🍷𝐇𝐄𝐋𝐏🍷 ",
                                 url="t.me/{}?start=ghelp_{}".format(
                                     context.bot.username, module
                                 ),
@@ -953,12 +914,12 @@ def get_help(update: Update, context: CallbackContext):
             )
             return
         update.effective_message.reply_text(
-            "» ᴄʜᴏᴏsᴇ ᴀɴ ᴏᴩᴛɪᴏɴ ғᴏʀ ɢᴇᴛᴛɪɴɢ ʜᴇʟᴩ.",
+            "» 𝐂𝐡𝐨𝐨𝐬𝐞 𝐀𝐧 𝐎𝐩𝐭𝐢𝐨𝐧 𝐅𝐨𝐫 𝐆𝐞𝐭𝐭𝐢𝐧𝐠 𝐇𝐞𝐥𝐩🏘",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
-                            text="ᴏᴩᴇɴ ɪɴ ᴩʀɪᴠᴀᴛᴇ",
+                            text="🍷𝐒𝐭𝐚𝐫𝐭 𝐈𝐧 𝐏𝐫𝐢𝐯𝐚𝐭𝐞🍷",
                             url="https://t.me/{}?start=help".format(
                                 context.bot.username
                             ),
@@ -966,7 +927,7 @@ def get_help(update: Update, context: CallbackContext):
                     ],
                     [
                         InlineKeyboardButton(
-                            text="ᴏᴩᴇɴ ʜᴇʀᴇ",
+                            text="♨️𝐎𝐩𝐞𝐧 𝐇𝐞𝐫𝐞♨️",
                             callback_data="help_back",
                         )
                     ],
@@ -1213,18 +1174,16 @@ def main():
         try:
             dispatcher.bot.sendAnimation(
                 f"@{SUPPORT_CHAT}",
-                animation="https://telegra.ph/file/e2b12aa3a88333ed74cfb.mp4",
+                animation="https://te.legra.ph/file/731f6b26b2ef1501e35c7.mp4",
                 caption=f"""
-✨ㅤ{dispatcher.bot.first_name} ɪs ᴀʟɪᴠᴇ ʙᴀʙʏ...
+{dispatcher.bot.first_name}
 
-─╼⃝𖠁----------------𖠁⃝╾─•
-ㅤ **ᴘʏᴛʜᴏɴ :** `{y()}`
-   **ʟɪʙʀᴀʀʏ :** `{telever}`
-   **ᴛᴇʟᴇᴛʜᴏɴ :** `{tlhver}`
-ㅤ **ᴩʏʀᴏɢʀᴀᴍ :** `{pyrover}`
+╔═════ஜ۩۞۩ஜ════╗
 
-─╼⃝𖠁-----------------𖠁⃝╾─•
-ᴍᴀᴅᴇ ᴡɪᴛʜ ❤  ʙʏ [ᴍᴜᴋᴇsʜ]("t.me/mr_sukkun")""",
+ ♨️𝗠𝗔𝗗𝗘 𝗕𝗬 [𝗩𝗜𝗣 𝗕𝗢𝗬](https://t.me/the_vip_boy)♨️
+  
+╚═════ஜ۩۞۩ஜ════╝
+""",
                 parse_mode=ParseMode.MARKDOWN,
             )
         except Unauthorized:
