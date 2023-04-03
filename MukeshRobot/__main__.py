@@ -485,7 +485,7 @@ def Music_about_callback(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        In[
+                        
                 InlineKeyboardButton(
                     text="🍁αԃɱιɳ🍁",
                     callback_data="Music_1",
@@ -547,7 +547,6 @@ def Music_about_callback(update: Update, context: CallbackContext):
                         InlineKeyboardButton(text="✯ вα¢к ✯", callback_data="mukesh_back"),
                     ],
                 ]
-            ),
         )
     elif query.data == "Music_1":
         query.message.edit_text(
