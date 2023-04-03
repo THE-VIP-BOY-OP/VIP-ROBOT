@@ -70,32 +70,19 @@ def get_readable_time(seconds: int) -> str:
     ping_time += ":".join(time_list)
 
     return ping_time
-
 PM_START_TEX = """
-𝙷𝚎𝚢 `{}`, . . . 
+ʜᴇʟʟᴏ `{}`, ʜᴏᴡ ᴀʀᴇ ʏᴏᴜ \nᴡᴀɪᴛ ᴀ ᴍᴏᴍᴇɴᴛ ʙʀᴏ . . . 
 """
 
-HELP_STRINGS = """ hey"""
 
-PM_START_TEXT = """
-๏ 𝐇𝐈 𝐌𝐑./𝐌𝐈𝐒𝐒 {} 😅 
+PM_START_TEXT = """ 
+*ʜᴇʏ* {} , 🥀
+*๏ ᴛʜɪs ɪs* {} !
+➻ ᴛʜᴇ ᴍᴏsᴛ ᴩᴏᴡᴇʀғᴜʟ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴩ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ  ➕ ᴍᴜsɪᴄ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴀɴᴅ ɪ ʜᴀᴠᴇ sᴏᴍᴇ ᴀᴇsᴏᴍᴇ ᴀɴᴅ ᴜsᴇғᴜʟ ғᴇᴀᴛᴜʀᴇs.
+──────────────────
+*๏ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʜᴇʟᴩ ʙᴜᴛᴛᴏɴ ᴛᴏ ɢᴇᴛ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴍʏ ᴍᴏᴅᴜʟᴇs ᴀɴᴅ ᴄᴏᴍᴍᴀɴᴅs.*
+"""
 
-            🌹𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐇𝐞𝐫𝐞🌹
-
-♧ 𝗠𝗬𝗦𝗘𝗟𝗙 {} 😃
-
-➻ 𝚃𝙷𝙴 𝙼𝙾𝚂𝚃 𝙿𝙾𝚆𝙴𝚁𝙵𝚄𝙻 𝚃𝙴𝙻𝙴𝙶𝚁𝙰𝙼 𝙶𝚁𝙾𝚄𝙿 𝙼𝙰𝙽𝙰𝙶𝙴𝙼𝙴𝙽𝚃 𝙱𝙾𝚃 𝚆𝙸𝚃𝙷 𝚂𝙾𝙼𝙴 𝙰𝚆𝙴𝚂𝙾𝙼𝙴 & 𝚄𝚂𝙴𝙵𝚄𝙻 𝙲𝙾𝙾𝙻 𝙵𝙴𝙰𝚃𝚄𝚁𝙴𝚂.
-
-๏───────────────────────๏
-๏24𝚡7 𝚄𝙿𝚃𝙸𝙼𝙴 
-๏𝙻𝙰𝙶 𝙵𝚁𝙴𝙴
-๏𝙽𝙾 𝙿𝚁𝙾𝙼𝙾 & 𝙰𝙳𝚂
-๏𝙰𝙳𝚅𝙰𝙽𝙲𝙴 & 𝚄𝚂𝙴𝙵𝚄𝙻 𝙵𝙴𝙰𝚃𝚄𝚁𝙴𝚂
-๏𝙼𝚄𝚂𝙸𝙲 𝙿𝙻𝙰𝚈 𝙵𝙴𝙰𝚃𝚄𝚁𝙴𝚂
-๏𝚅𝙸𝚂𝙸𝚃 @TG\_FRIENDSS 𝙵𝙾𝚁 𝙼𝙾𝚁𝙴...
-๏───────────────────────๏
-
-☆............𝙱𝚈 » [𝚅𝙸𝙿 𝙱𝙾𝚈](https://t.me/the_vip_boy)............☆
 buttons = [
     [
         InlineKeyboardButton(
@@ -130,38 +117,37 @@ USER_SETTINGS = {}
 
 for module_name in ALL_MODULES:
     imported_module = importlib.import_module("MukeshRobot.modules." + module_name)
-    if not hasattr(imported_module, "__mod_name__"):
-        imported_module.__mod_name__ = imported_module.__name__
+    if not hasattr(imported_module, "mod_name"):
+        imported_module.mod_name = imported_module.name
 
-    if imported_module.__mod_name__.lower() not in IMPORTED:
-        IMPORTED[imported_module.__mod_name__.lower()] = imported_module
+    if imported_module.mod_name.lower() not in IMPORTED:
+        IMPORTED[imported_module.mod_name.lower()] = imported_module
     else:
         raise Exception("Can't have two modules with the same name! Please change one")
 
-    if hasattr(imported_module, "__help__") and imported_module.__help__:
-        HELPABLE[imported_module.__mod_name__.lower()] = imported_module
-
-    # Chats to migrate on chat_migrated events
-    if hasattr(imported_module, "__migrate__"):
+    if hasattr(imported_module, "help") and imported_module.help:
+        HELPABLE[imported_module.mod_name.lower()] = imported_module
+# Chats to migrate on chat_migrated events
+    if hasattr(imported_module, "migrate"):
         MIGRATEABLE.append(imported_module)
 
-    if hasattr(imported_module, "__stats__"):
+    if hasattr(imported_module, "stats"):
         STATS.append(imported_module)
 
-    if hasattr(imported_module, "__user_info__"):
+    if hasattr(imported_module, "user_info"):
         USER_INFO.append(imported_module)
 
-    if hasattr(imported_module, "__import_data__"):
+    if hasattr(imported_module, "import_data"):
         DATA_IMPORT.append(imported_module)
 
-    if hasattr(imported_module, "__export_data__"):
+    if hasattr(imported_module, "export_data"):
         DATA_EXPORT.append(imported_module)
 
-    if hasattr(imported_module, "__chat_settings__"):
-        CHAT_SETTINGS[imported_module.__mod_name__.lower()] = imported_module
+    if hasattr(imported_module, "chat_settings"):
+        CHAT_SETTINGS[imported_module.mod_name.lower()] = imported_module
 
-    if hasattr(imported_module, "__user_settings__"):
-        USER_SETTINGS[imported_module.__mod_name__.lower()] = imported_module
+    if hasattr(imported_module, "user_settings"):
+        USER_SETTINGS[imported_module.mod_name.lower()] = imported_module
 
 
 # do not async
@@ -181,7 +167,7 @@ def send_help(chat_id, text, keyboard=None):
 def test(update: Update, context: CallbackContext):
     # pprint(eval(str(update)))
     update.effective_message.reply_text(
-        "Hola tester! _I_ *have* `markdown`", parse_mode=ParseMode.MARKDOWN
+        "Hola tester! _I_ *have* markdown", parse_mode=ParseMode.MARKDOWN
     )
     update.effective_message.reply_text("This person edited a message")
     print(update.effective_message)
@@ -201,7 +187,7 @@ def start(update: Update, context: CallbackContext):
                     return
                 send_help(
                     update.effective_chat.id,
-                    HELPABLE[mod].__help__,
+                    HELPABLE[mod].help,
                     InlineKeyboardMarkup(
                         [[InlineKeyboardButton(text="◁", callback_data="help_back")]]
                     ),
@@ -244,7 +230,7 @@ def start(update: Update, context: CallbackContext):
                 PM_START_TEXT.format(escape_markdown(first_name), BOT_NAME),
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
-                timeout=60,
+                 timeout=60,
             )
     else:
         update.effective_message.reply_photo(
@@ -264,7 +250,7 @@ def error_handler(update, context):
     # traceback.format_exception returns the usual python message about an exception, but as a
     # list of strings rather than a single string, so we have to join them together.
     tb_list = traceback.format_exception(
-        None, context.error, context.error.__traceback__
+        None, context.error, context.error.traceback
     )
     tb = "".join(tb_list)
 
@@ -329,9 +315,9 @@ def help_button(update, context):
             module = mod_match.group(1)
             text = (
                 "» *ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs ꜰᴏʀ​​* *{}* :\n".format(
-                    HELPABLE[module].__mod_name__
+                    HELPABLE[module].mod_name
                 )
-                + HELPABLE[module].__help__
+                + HELPABLE[module].help
             )
             query.message.edit_text(
                 text=text,
@@ -361,8 +347,7 @@ def help_button(update, context):
                     paginate_modules(next_page + 1, HELPABLE, "help")
                 ),
             )
-
-        elif back_match:
+elif back_match:
             query.message.edit_text(
                 text=HELP_STRINGS,
                 parse_mode=ParseMode.MARKDOWN,
@@ -428,7 +413,7 @@ def Mukesh_about_callback(update: Update, context: CallbackContext):
         )
     elif query.data == "mukesh_support":
         query.message.edit_text(
-            text="||*๏ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴs ɢɪᴠᴇɴ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ʜᴇʟᴩ ᴀɴᴅ ᴍᴏʀᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴍᴇ.||*"
+            text="*๏ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴs ɢɪᴠᴇɴ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ʜᴇʟᴩ ᴀɴᴅ ᴍᴏʀᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ᴍᴇ.*"
             f"\n\nɪғ ʏᴏᴜ ғᴏᴜɴᴅ ᴀɴʏ ʙᴜɢ ɪɴ {dispatcher.bot.first_name} ᴏʀ ɪғ ʏᴏᴜ ᴡᴀɴɴᴀ ɢɪᴠᴇ ғᴇᴇᴅʙᴀᴄᴋ ᴀʙᴏᴜᴛ ᴛʜᴇ {dispatcher.bot.first_name}, ᴩʟᴇᴀsᴇ ʀᴇᴩᴏʀᴛ ɪᴛ ᴀᴛ sᴜᴩᴩᴏʀᴛ ᴄʜᴀᴛ.",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
@@ -444,7 +429,7 @@ def Mukesh_about_callback(update: Update, context: CallbackContext):
                     [
                         InlineKeyboardButton(
                             text="🥀ᴅᴇᴠᴇʟᴏᴩᴇʀ🥀", url=f"tg://user?id={OWNER_ID}"
-                        ),
+),
                         InlineKeyboardButton(
                             text="✨ɢɪᴛʜᴜʙ✨", url="https://github.com/noob-mukesh"
                         ),
@@ -472,7 +457,7 @@ def Music_about_callback(update: Update, context: CallbackContext):
     if query.data == "Music_":
         query.message.edit_text(
             text=f"""
-**👀𝐇𝐞𝐲 𝐁𝐚𝐛𝐲 🖤**\n\n**🌺𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐓𝐨 {0}** 🍷\n\n🌹𝐈 𝐀𝐦 𝐀𝐧 📀 𝐀𝐝𝐯𝐚𝐧𝐜𝐞𝐝 🎭 𝐀𝐧𝐝 🌱 𝐒𝐮𝐩𝐞𝐫𝐟𝐚𝐬𝐭 🌼 𝐕𝐂 🍄 𝐏𝐥𝐚𝐲𝐞𝐫 📣 𝐖𝐢𝐭𝐡 🕙 24𝐱7 🌀 𝐀𝐜𝐭𝐢𝐯𝐞 » 𝐅𝐨𝐫 🗨️ 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦 ♨️ 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 🎸 𝐀𝐧𝐝 🏓 𝐆𝐫𝐨𝐮𝐩𝐬 🎻\n\n💐𝐅𝐞𝐞𝐥 😍 𝐋𝐚𝐠 📍 𝐅𝐫𝐞𝐞 😇 𝐓𝐨 🕊️ **𝐀𝐝𝐝 𝐌𝐞 𝐈𝐧 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩** 🤖 𝐀𝐧𝐝 🩸 𝐄𝐧𝐣𝐨𝐲 ❥︎ 𝐒𝐮𝐩𝐞𝐫 💥 𝐇𝐢𝐠𝐡 💫 𝐐𝐮𝐚𝐥𝐢𝐭𝐲 🦞 𝐀𝐮𝐝𝐢𝐨 🎧 𝐀𝐧𝐝 🔊 𝐕𝐢𝐝𝐞𝐨 🌷\n\n📡 𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐁𝐲:- [𝐕𝐈𝐏☆𝐁𝐎𝐘](https://t.me/the_vip_boy) 💞**
+👀𝐇𝐞𝐲 𝐁𝐚𝐛𝐲 🖤\n\n🌺𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐓𝐨 {0} 🍷\n\n🌹𝐈 𝐀𝐦 𝐀𝐧 📀 𝐀𝐝𝐯𝐚𝐧𝐜𝐞𝐝 🎭 𝐀𝐧𝐝 🌱 𝐒𝐮𝐩𝐞𝐫𝐟𝐚𝐬𝐭 🌼 𝐕𝐂 🍄 𝐏𝐥𝐚𝐲𝐞𝐫 📣 𝐖𝐢𝐭𝐡 🕙 24𝐱7 🌀 𝐀𝐜𝐭𝐢𝐯𝐞 » 𝐅𝐨𝐫 🗨️ 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦 ♨️ 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 🎸 𝐀𝐧𝐝 🏓 𝐆𝐫𝐨𝐮𝐩𝐬 🎻\n\n💐𝐅𝐞𝐞𝐥 😍 𝐋𝐚𝐠 📍 𝐅𝐫𝐞𝐞 😇 𝐓𝐨 🕊️ 𝐀𝐝𝐝 𝐌𝐞 𝐈𝐧 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩 🤖 𝐀𝐧𝐝 🩸 𝐄𝐧𝐣𝐨𝐲 ❥︎ 𝐒𝐮𝐩𝐞𝐫 💥 𝐇𝐢𝐠𝐡 💫 𝐐𝐮𝐚𝐥𝐢𝐭𝐲 🦞 𝐀𝐮𝐝𝐢𝐨 🎧 𝐀𝐧𝐝 🔊 𝐕𝐢𝐝𝐞𝐨 🌷\n\n📡 𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐁𝐲:- [𝐕𝐈𝐏☆𝐁𝐎𝐘](https://t.me/the_vip_boy) 💞**
 """, 
            parse_mode=ParseMode.MARKDOWN,
            disable_web_page_preview=True, 
@@ -559,7 +544,6 @@ def Music_about_callback(update: Update, context: CallbackContext):
 /end ᴏʀ /stop : ᴄʟᴇᴀʀs ᴛʜᴇ ǫᴜᴇᴜᴇ ᴀɴᴅ ᴇɴᴅ ᴛʜᴇ ᴄᴜʀʀᴇɴᴛ ᴩʟᴀʏɪɴɢ sᴛʀᴇᴀᴍ.
 
 /player : ɢᴇᴛ ᴀ ɪɴᴛᴇʀᴀᴄᴛɪᴠᴇ ᴩʟᴀʏᴇʀ ᴩᴀɴᴇʟ.
-
 /queue : sʜᴏᴡs ᴛʜᴇ ǫᴜᴇᴜᴇᴅ ᴛʀᴀᴄᴋs ʟɪsᴛ.
 
 ☆............𝙱𝚈 » [𝚅𝙸𝙿 𝙱𝙾𝚈](https://t.me/the_vip_boy)............☆
@@ -648,7 +632,7 @@ def Music_about_callback(update: Update, context: CallbackContext):
 -assistant : ʙʀᴏᴀᴅᴄᴀsᴛ ʏᴏᴜʀ ᴍᴇssᴀɢᴇ ғʀᴏᴍ ᴛʜᴇ ᴀssɪᴛᴀɴᴛ ᴀᴄᴄᴏᴜɴᴛ ᴏғ ᴛʜᴇ ʙᴏᴛ.
 -nobot : ғᴏʀᴄᴇs ᴛʜᴇ ʙᴏᴛ ᴛᴏ ɴᴏᴛ ʙʀᴏᴀᴅᴄᴀsᴛ ᴛʜᴇ ᴍᴇssᴀɢᴇ..
 
-ᴇxᴀᴍᴩʟᴇ: `/broadcast -user -assistant -pin ᴛᴇsᴛɪɴɢ` ʙʀᴏᴀᴅᴄᴀsᴛ
+ᴇxᴀᴍᴩʟᴇ: /broadcast -user -assistant -pin ᴛᴇsᴛɪɴɢ ʙʀᴏᴀᴅᴄᴀsᴛ
 
 ☆............𝙱𝚈 » [𝚅𝙸𝙿 𝙱𝙾𝚈](https://t.me/the_vip_boy)............☆
 """,
@@ -797,120 +781,7 @@ def Music_about_callback(update: Update, context: CallbackContext):
 /delsudo [ᴜsᴇʀɴᴀᴍᴇ ᴏʀ ʀᴇᴩʟʏ ᴛᴏ ᴀ ᴄʜᴜᴛɪʏᴀ.]
 
 🥶 ʜᴇʀᴏᴋᴜ :
-
-/usage : sʜᴏᴡs ᴛʜᴇ ᴅʏɴᴏ ᴜsᴀɢᴇ ᴏғ ᴛʜᴇ ᴍᴏɴᴛʜ.
-
-🤯 ᴄᴏɴғɪɢ ᴠᴀʀɪᴀʙʟᴇs:
-
-/get\_var : ɢᴇᴛ ᴀ ᴄᴏɴғɪɢ ᴠᴀʀ ғʀᴏᴍ ʜᴇʀᴏᴋᴜ ᴏʀ .ᴇɴᴠ.
-/del\_var : ᴅᴇʟᴇᴛᴇ ᴀ ᴄᴏɴғɪɢ ᴠᴀʀ ᴏɴ ʜᴇʀᴏᴋᴜ ᴏʀ .ᴇɴᴠ.
-/set\_var [ᴠᴀʀ ɴᴀᴍᴇ] [ᴠᴀʟᴜᴇ] : sᴇᴛ ᴏʀ ᴜᴩᴅᴀᴛᴇ ᴀ ᴄᴏɴғɪɢ ᴠᴀʀ ᴏɴ ʜᴇʀᴏᴋᴜ ᴏʀ .ᴇɴᴠ.
-
-🤓 ʙᴏᴛ ᴄᴏᴍᴍᴀɴᴅs:
-
-/restart : ʀᴇsᴛᴀʀᴛs ʏᴏᴜʀ ʙᴏᴛ.
-
-/update : ᴜᴩᴅᴀᴛᴇs ᴛʜᴇ ʙᴏᴛ ғʀᴏᴍ ᴛʜᴇ ᴜᴩsᴛʀᴇᴀᴍ ʀᴇᴩᴏ.
-
-/speedtest : ᴄʜᴇᴄᴋ ʙᴏᴛ's sᴇʀᴠᴇʀ sᴩᴇᴇᴅ.
-
-/maintenance [ᴇɴᴀʙʟᴇ/ᴅɪsᴀʙʟᴇ] : ᴇɴᴀʙʟᴇ ᴏʀ ᴅɪsᴀʙʟᴇ ᴍᴀɪɴᴛᴇɴᴀɴᴄᴇ ᴍᴏᴅᴇ ᴏғ ʏᴏᴜʀ ʙᴏᴛ.
-
-/logger [ᴇɴᴀʙʟᴇ/ᴅɪsᴀʙʟᴇ] : ʙᴏᴛ ᴡɪʟʟ sᴛᴀʀᴛ ʟᴏɢɢɪɴɢ ᴛʜᴇ ᴀᴄᴛɪᴠɪᴛɪᴇs ʜᴀᴩᴩᴇɴ ᴏɴ ʙᴏᴛ.
-
-/logs [ɴᴜᴍʙᴇʀ ᴏғ ʟɪɴᴇs] : ɢᴇᴛ ʟᴏɢs ᴏғ ʏᴏᴜʀ ʙᴏᴛ [ᴅᴇғᴀᴜʟᴛ ᴠᴀʟᴜᴇ ɪs 100 ʟɪɴᴇs]
-
-💔 ғᴏʀ ᴩʀɪᴠᴀᴛᴇ ʙᴏᴛ ᴏɴʟʏ :
-
-/authorize [ᴄʜᴀᴛ ɪᴅ] : ᴀʟʟᴏᴡs ᴀ ᴄʜᴀᴛ ғᴏʀ ᴜsɪɴɢ ᴛʜᴇ ʙᴏᴛ.
-/unauthorize [ᴄʜᴀᴛ ɪᴅ] : ᴅɪsᴀʟʟᴏᴡs ᴛʜᴇ ᴀʟʟᴏᴡᴇᴅ ᴄʜᴀᴛ.
-/authorized : sʜᴏᴡs ᴛʜᴇ ʟɪsᴛ ᴏғ ᴀʟʟᴏᴡᴇᴅ ᴄʜᴀᴛs.
-
-☆............𝙱𝚈 » [𝚅𝙸𝙿 𝙱𝙾𝚈](https://t.me/the_vip_boy)............☆
-""",
-            parse_mode=ParseMode.MARKDOWN,
-            disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup(
-                [
-                    [
-                        InlineKeyboardButton(text="✯ вα¢к ✯", callback_data="Music_"),
-                    ]
-                ]
-            ),
-        )
-    elif query.data == "Music_11":
-        query.message.edit_text(
-            text=f"*» 🚩 ɢᴇᴛ sᴛᴀʀᴛᴇᴅ ᴡɪᴛʜ ʙᴏᴛ 🚩«*"
-            f"""
-
-/start : sᴛᴀʀᴛs ᴛʜᴇ ᴍᴜsɪᴄ ʙᴏᴛ.
-
-/help : ɢᴇᴛ ʜᴇʟᴩ ᴍᴇɴᴜ ᴡɪᴛʜ ᴇxᴩʟᴀɴᴀᴛɪᴏɴ ᴏғ ᴄᴏᴍᴍᴀɴᴅs.
-
-/reboot : ʀᴇʙᴏᴏᴛs ᴛʜᴇ ʙᴏᴛ ғᴏʀ ʏᴏᴜʀ ᴄʜᴀᴛ.
-
-/settings : sʜᴏᴡs ᴛʜᴇ ɢʀᴏᴜᴩ sᴇᴛᴛɪɴɢs ᴡɪᴛʜ ᴀɴ ɪɴᴛᴇʀᴀᴄᴛɪᴠᴇ ɪɴʟɪɴᴇ ᴍᴇɴᴜ.
-
-/sudolist : sʜᴏᴡs ᴛʜᴇ sᴜᴅᴏ ᴜsᴇʀs ᴏғ ᴍᴜsɪᴄ ʙᴏᴛ.
-
-☆............𝙱𝚈 » [𝚅𝙸𝙿 𝙱𝙾𝚈](https://t.me/the_vip_boy)............☆
-""",
-            parse_mode=ParseMode.MARKDOWN,
-            disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup(
-                [
-                    [
-                        InlineKeyboardButton(text="✯ вα¢к ✯", callback_data="Music_"),
-                    ]
-                ]
-            ),
-        )
-    elif query.data == "Music_back":
-        first_name = update.effective_user.first_name
-        query.message.edit_text(
-            PM_START_TEXT.format(escape_markdown(first_name), BOT_NAME),
-            reply_markup=InlineKeyboardMarkup(buttons),
-            parse_mode=ParseMode.MARKDOWN,
-            timeout=60,
-            disable_web_page_preview=False,
-        )
-
-
-@run_async
-def get_help(update: Update, context: CallbackContext):
-    chat = update.effective_chat  # type: Optional[Chat]
-    args = update.effective_message.text.split(None, 1)
-
-    # ONLY send help in PM
-    if chat.type != chat.PRIVATE:
-        if len(args) >= 2 and any(args[1].lower() == x for x in HELPABLE):
-            module = args[1].lower()
-            update.effective_message.reply_text(
-                f"Contact me in PM to get help of {module.capitalize()}",
-                reply_markup=InlineKeyboardMarkup(
-                    [
-                        [
-                            InlineKeyboardButton(
-                                text=" 🌲𝗛𝗘𝗟𝗣🌲 ​",
-                                url="t.me/{}?start=ghelp_{}".format(
-                                    context.bot.username, module
-                                ),
-                            )
-                        ]
-                    ]
-                ),
-            )
-            return
-        update.effective_message.reply_text(
-                 "» 𝗖𝗵𝗼𝗼𝘀𝗲 𝗢𝗽𝘁𝗶𝗼𝗻 𝗙𝗼𝗿 𝗢𝗽𝗲𝗻 𝗙𝗲𝗮𝘁𝘂𝗿𝗲𝘀🌲.",
-            reply_markup=InlineKeyboardMarkup(
-                [
-                    [
-                        InlineKeyboardButton(
-                            text="🏡𝗢𝗣𝗘𝗡 𝗜𝗡 𝗗𝗠🏡",
-                            url="https://t.me/{}?start=help".format(
-                                context.bot.username
-                            ),
+),
                         )
                     ],
                     [
@@ -928,9 +799,9 @@ def get_help(update: Update, context: CallbackContext):
         module = args[1].lower()
         text = (
             "Here is the available help for the *{}* module:\n".format(
-                HELPABLE[module].__mod_name__
+                HELPABLE[module].mod_name
             )
-            + HELPABLE[module].__help__
+            + HELPABLE[module].help
         )
         send_help(
             chat.id,
@@ -948,7 +819,7 @@ def send_settings(chat_id, user_id, user=False):
     if user:
         if USER_SETTINGS:
             settings = "\n\n".join(
-                "*{}*:\n{}".format(mod.__mod_name__, mod.__user_settings__(user_id))
+                "*{}*:\n{}".format(mod.mod_name, mod.user_settings(user_id))
                 for mod in USER_SETTINGS.values()
             )
             dispatcher.bot.send_message(
@@ -1000,8 +871,8 @@ def settings_button(update: Update, context: CallbackContext):
             module = mod_match.group(2)
             chat = bot.get_chat(chat_id)
             text = "*{}* has the following settings for the *{}* module:\n\n".format(
-                escape_markdown(chat.title), CHAT_SETTINGS[module].__mod_name__
-            ) + CHAT_SETTINGS[module].__chat_settings__(chat_id, user.id)
+                escape_markdown(chat.title), CHAT_SETTINGS[module].mod_name
+            ) + CHAT_SETTINGS[module].chat_settings(chat_id, user.id)
             query.message.reply_text(
                 text=text,
                 parse_mode=ParseMode.MARKDOWN,
@@ -1020,7 +891,7 @@ def settings_button(update: Update, context: CallbackContext):
         elif prev_match:
             chat_id = prev_match.group(1)
             curr_page = int(prev_match.group(2))
-            chat = bot.get_chat(chat_id)
+chat = bot.get_chat(chat_id)
             query.message.reply_text(
                 "Hi there! There are quite a few settings for {} - go ahead and pick what "
                 "you're interested in.".format(chat.title),
@@ -1127,8 +998,7 @@ def donate(update: Update, context: CallbackContext):
                 parse_mode=ParseMode.MARKDOWN,
                 disable_web_page_preview=True,
             )
-
-            update.effective_message.reply_text(
+update.effective_message.reply_text(
                 "ɪ'ᴠᴇ ᴘᴍ'ᴇᴅ ʏᴏᴜ ᴀʙᴏᴜᴛ ᴅᴏɴᴀᴛɪɴɢ ᴛᴏ ᴍʏ ᴄʀᴇᴀᴛᴏʀ!"
             )
         except Unauthorized:
@@ -1150,7 +1020,7 @@ def migrate_chats(update: Update, context: CallbackContext):
 
     LOGGER.info("Migrating from %s, to %s", str(old_chat), str(new_chat))
     for mod in MIGRATEABLE:
-        mod.__migrate__(old_chat, new_chat)
+        mod.migrate(old_chat, new_chat)
 
     LOGGER.info("ѕυϲϲєѕѕƒυℓℓу мιgяαтє∂!")
     raise DispatcherHandlerStop
@@ -1225,7 +1095,7 @@ def main():
     updater.idle()
 
 
-if __name__ == "__main__":
+if name == "main":
     LOGGER.info("Successfully loaded modules: " + str(ALL_MODULES))
     telethn.start(bot_token=TOKEN)
     pbot.start()
