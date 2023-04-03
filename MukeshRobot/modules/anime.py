@@ -141,7 +141,7 @@ dispatcher.add_handler(QUOTES_HANDLER)
 
 __mod_name__ = "♨️ǫᴜᴏᴛᴇs♨️"
 __help__ = """
- ©️ [VIP BOY] (f"://user_id={OWNER_ID}"))
+
 /quote :- ᴡʀɪᴛᴇ ǫᴜᴏᴛᴇs
 /animequotes :- ᴡʀɪᴛᴇ ᴀɴɪᴍᴇǫᴜᴏᴛᴇs
 
