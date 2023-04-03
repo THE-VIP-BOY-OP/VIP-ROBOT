@@ -8,7 +8,7 @@
   <img src="https://graph.org/file/d874fc40ddf9ead0cad6b.jpg">
 </p>
 
-_ᴀᴠᴀɪʟᴀʙʟᴇ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ ᴀs [TG MANAGER](https://t.me/TG_MANAGER_ROBOT)_
+ᴀᴠᴀɪʟᴀʙʟᴇ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ ᴀs [𝄟ॐ❥𝗩𝗜𝗣🍷𝗥𝗢𝗕𝗢𝗧⏤͟͟͞❥͜͡𝄟⃟🥀](https://t.me/THE_VIP_ROBOT)
 ━━━━━━━━━━━━━━━━━━━━
 
 
