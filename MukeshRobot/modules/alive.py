@@ -51,21 +51,15 @@ async def restart(client, m: Message):
         "CAACAgUAAxkDAAJHbmLuy2NEfrfh6lZSohacEGrVjd5wAAIOBAACl42QVKnra4sdzC_uKQQ"
     )
     await umm.delete()
-    await asyncio.sleep(2)
+    await asyncio.sleep(0.8)
     await m.reply_photo(
         lol,
-        caption=f"""**ʜᴇʏ, ɪ ᴀᴍ 『[ɢʀᴏᴜᴘ ᴄᴏɴᴛʀᴏʟʟᴇʀ](f"t.me/{BOT_USERNAME}")』**
-   ━━━━━━━━━━━━━━━━━━━
-  » **ᴍʏ ᴏᴡɴᴇʀ :** [ᴍᴜᴋᴇsʜ](tg://user?id={OWNER_ID}))
-  
-  » **ʟɪʙʀᴀʀʏ ᴠᴇʀsɪᴏɴ :** `{lver}`
-  
-  » **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{tver}`
-  
-  » **ᴘʏʀᴏɢʀᴀᴍ ᴠᴇʀsɪᴏɴ :** `{pver}`
-  
-  » **ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{pyver()}`
-   ━━━━━━━━━━━━━━━━━━━""",
+        caption=f"""**🌷ʜᴇʏ, ɪ ᴀᴍ 『[𝗩𝗜𝗣 𝗥𝗢𝗕𝗢𝗧](f"t.me/{BOT_USERNAME}")』🎄**
+   ╔═════ஜ۩۞۩ஜ════╗
+
+   ♨️𝗠𝗔𝗗𝗘 𝗕𝗬 [𝗩𝗜𝗣 𝗕𝗢𝗬](https://t.me/THE_VIP_BOY)♨️
+
+   ╚═════ஜ۩۞۩ஜ════╝""",
         reply_markup=InlineKeyboardMarkup(Mukesh),
     )
 __mod_name__ = "♨️ᴀʟɪᴠᴇ♨️"
