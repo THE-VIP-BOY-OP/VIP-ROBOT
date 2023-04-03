@@ -1034,11 +1034,7 @@ def main():
                 caption=f"""
 {dispatcher.bot.first_name}
 
-╔═════ஜ۩۞۩ஜ════╗
-
- ♨️𝗠𝗔𝗗𝗘 𝗕𝗬 [𝗩𝗜𝗣 𝗕𝗢𝗬](https://t.me/the_vip_boy)♨️
-  
-╚═════ஜ۩۞۩ஜ════╝
+Hi
 
 """,
                 parse_mode=ParseMode.MARKDOWN,
