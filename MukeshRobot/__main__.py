@@ -1026,7 +1026,7 @@ def migrate_chats(update: Update, context: CallbackContext):
 
 def main():
 
-    if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str): try: dispatcher.bot.sendAnimation( f"@{SUPPORT_CHAT}", animation="https://telegra.ph/file/e2b12aa3a88333ed74cfb.mp4", caption=f""" ✨ㅤ{dispatcher.bot.first_name} ɪs ᴀʟɪᴠᴇ ʙᴀʙʏ... ─╼⃝𖠁----------------𖠁⃝╾─• ㅤ ᴘʏᴛʜᴏɴ : {y()} ʟɪʙʀᴀʀʏ : {telever} ᴛᴇʟᴇᴛʜᴏɴ : {tlhver} ㅤ ᴩʏʀᴏɢʀᴀᴍ : {pyrover} ─╼⃝𖠁-----------------𖠁⃝╾─• ᴍᴀᴅᴇ ᴡɪᴛʜ ❤ ʙʏ [ᴍᴜᴋᴇsʜ]("t.me/mr_sukkun")""",
+    if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str): try: dispatcher.bot.sendAnimation( f"@{SUPPORT_CHAT}", animation="https://telegra.ph/file/e2b12aa3a88333ed74cfb.mp4", caption=f""" ㅤ{dispatcher.bot.first_name} ɪs ᴀʟɪᴠᴇ ʙᴀʙʏ... ─╼⃝𖠁----------------𖠁⃝╾─• ㅤ ᴘʏᴛʜᴏɴ : {y()} ʟɪʙʀᴀʀʏ : {telever} ᴛᴇʟᴇᴛʜᴏɴ : {tlhver} ㅤ ᴩʏʀᴏɢʀᴀᴍ : {pyrover} ─╼⃝𖠁-----------------𖠁⃝╾─• ᴍᴀᴅᴇ ᴡɪᴛʜ ❤ ʙʏ [ᴍᴜᴋᴇsʜ]("t.me/mr_sukkun")""",
                 parse_mode=ParseMode.MARKDOWN,
             )
         except Unauthorized:
