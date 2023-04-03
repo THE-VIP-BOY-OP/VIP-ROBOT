@@ -257,7 +257,7 @@ async def lego(event):
         img = Image.open(io.BytesIO(requests.get(randc).content))
         draw = ImageDraw.Draw(img)
         image_widthz, image_heightz = img.size
-        fnt = glob.glob("./FallenRobot/resources/fonts/*")
+        fnt = glob.glob("./MukeshRobot/resources/fonts/*")
         randf = random.choice(fnt)
         font = ImageFont.truetype(randf, 120)
         w, h = draw.textsize(text, font=font)
@@ -274,7 +274,7 @@ async def lego(event):
         draw.text(
             (x, y), text, font=font, fill="white", stroke_width=1, stroke_fill="black"
         )
-        fname = "fallen.png"
+        fname = "mukesh.png"
         img.save(fname, "png")
         await telethn.send_file(
             event.chat_id,
@@ -307,8 +307,8 @@ async def lego(event):
         draw.text(
             (x, y), text, font=font, fill="white", stroke_width=1, stroke_fill="black"
         )
-        fname = "mukesh.jpg"
-        img.save(fname, "jpg")
+        fname = "mukesh.png"
+        img.save(fname, "png")
         await telethn.send_file(
             event.chat_id,
             file=fname,
@@ -325,6 +325,4 @@ __help__ = """
 I can create some beautiful and attractive logo for your profile pics.
 
 ❍ /logo (Text) *:* Create a logo of your given text with random view.
-
-☆............𝙱𝚈 » [𝚅𝙸𝙿 𝙱𝙾𝚈](https://t.me/the_vip_boy)............☆
 """
