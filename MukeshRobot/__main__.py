@@ -1034,9 +1034,7 @@ def main():
                 caption=f"""
 {dispatcher.bot.first_name}
 
-Hi
-
-""",
+Hi""",
                 parse_mode=ParseMode.MARKDOWN,
             )
         except Unauthorized:
