@@ -865,8 +865,7 @@ def Music_about_callback(update: Update, context: CallbackContext):
 /unauthorize [ᴄʜᴀᴛ ɪᴅ] : ᴅɪsᴀʟʟᴏᴡs ᴛʜᴇ ᴀʟʟᴏᴡᴇᴅ ᴄʜᴀᴛ.
 /authorized : sʜᴏᴡs ᴛʜᴇ ʟɪsᴛ ᴏғ ᴀʟʟᴏᴡᴇᴅ ᴄʜᴀᴛs.
 
-☆............𝙱𝚈 » [𝚅𝙸𝙿 𝙱𝙾𝚈](https://t.me/the_vip_boy)............☆
-""",
+☆............𝙱𝚈 » [𝚅𝙸𝙿 𝙱𝙾𝚈](https://t.me/the_vip_boy)............☆""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
