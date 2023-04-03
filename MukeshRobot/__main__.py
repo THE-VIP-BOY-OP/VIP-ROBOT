@@ -118,7 +118,6 @@ buttons = [
 HELP_STRINGS = f"""
 » {BOT_NAME}  ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴅᴇsᴄʀɪᴘᴛɪᴏɴ ᴀʙᴏᴜᴛ sᴘᴇᴄɪғɪᴄs ᴄᴏᴍᴍᴀɴᴅ"""
 
-
 IMPORTED = {}
 MIGRATEABLE = []
 HELPABLE = {}
