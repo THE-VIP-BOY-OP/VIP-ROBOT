@@ -75,6 +75,8 @@ PM_START_TEX = """
 𝙷𝚎𝚢 `{}`, . . . 
 """
 
+HELP_STRINGS = """ hey"""
+
 PM_START_TEXT = """
 ๏ 𝐇𝐈 𝐌𝐑./𝐌𝐈𝐒𝐒 {} 😅 
 
