@@ -1,6 +1,7 @@
-from pyrogram import Client, filters
+from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
+from MukeshRobot import pbot as Client
 from MukeshRobot.utils.fonts import Fonts
 
 
@@ -196,6 +197,7 @@ async def style(c, m):
 __help__ = """
 
  ❍ font <text> *:* ᴄᴏɴᴠᴇʀᴛs sɪᴍᴩʟᴇ ᴛᴇxᴛ ᴛᴏ ʙᴇᴀᴜᴛɪғᴜʟ ᴛᴇxᴛ ʙʏ ᴄʜᴀɴɢɪɴɢ ɪᴛ's ғᴏɴᴛ.
+
 
 ☆............𝙱𝚈 » [𝚅𝙸𝙿 𝙱𝙾𝚈](https://t.me/the_vip_boy)............☆
  """
