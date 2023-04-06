@@ -77,7 +77,7 @@ PM_START_TEX = """
 
 PM_START_TEXT = """ 
 
-👀𝐇𝐞𝐲 {} , [🖤](https://graph.org/file/d874fc40ddf9ead0cad6b.jpg)
+👀𝐇𝐞𝐲 {} , [🖤]({})
 
 ╔══❰🌺𝐖𝐄𝐋𝐂𝐎𝐌𝐄🌺❱═══❍⊱❁۪۪
 ║
@@ -246,7 +246,7 @@ def start(update: Update, context: CallbackContext):
             lol.delete()
             
             update.effective_message.reply_text(
-                PM_START_TEXT.format(escape_markdown(first_name), BOT_NAME),
+                PM_START_TEXT.format(escape_markdown(first_name), (START_IMG), BOT_NAME),
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
