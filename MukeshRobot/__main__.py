@@ -614,7 +614,7 @@ def Music_about_callback(update: Update, context: CallbackContext):
 
 ᴇxᴀᴍᴩʟᴇ: /broadcast -user -assistant -pin ᴛᴇsᴛɪɴɢ ʙʀᴏᴀᴅᴄᴀsᴛ
 
-☆............𝙱𝚈 » [𝚅𝙸𝙿 𝙱𝙾𝚈](https://t.me/the_vip_boy)............☆
+☆............𝙱𝚈 » [ѕиєнαℓ](https://t.me/AA_RAHA_HU_RUK)............☆
 """,
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -637,7 +637,7 @@ def Music_about_callback(update: Update, context: CallbackContext):
 
 /gbannedusers : sʜᴏᴡs ᴛʜᴇ ʟɪsᴛ ᴏғ ɢʟᴏʙᴀʟʟʏ ʙᴀɴɴᴇʀ ᴜsᴇʀs.
 
-☆............𝙱𝚈 » [𝚅𝙸𝙿 𝙱𝙾𝚈](https://t.me/the_vip_boy)............☆
+☆............by » [ѕиєнαℓ](https://t.me/AA_RAHA_HU_RUK)............☆
 """,
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
