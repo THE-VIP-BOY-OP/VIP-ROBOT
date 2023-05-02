@@ -14,14 +14,14 @@
 
 
 <h2 align="center">
-    𝄟🌹𝗩𝗜𝗣 𝗥𝗢𝗕𝗢𝗧🌹​​​​​𝄟​​​​​
+    𝄟𝄟ॐ❥𝗥𝗜𝗗𝗘𝗥🍷𝗠𝗨𝗦𝗜𝗖🍷𝗕𝗢𝗧​​​​​𝄟​​​​​
 </h2>
 
 <p align="center">
-  <img src="https://graph.org/file/d874fc40ddf9ead0cad6b.jpg">
+  <img src="https://graph.org/file/b5fb1eb295fb40643fda6.jpg">
 </p>
 
-ᴀᴠᴀɪʟᴀʙʟᴇ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ ᴀs [𝄟ॐ❥𝗩𝗜𝗣🍷𝗥𝗢𝗕𝗢𝗧𝄟⃟🥀](https://t.me/THE_VIP_ROBOT)
+ᴀᴠᴀɪʟᴀʙʟᴇ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ ᴀs [𝄟ॐ❥𝗥𝗜𝗗𝗘𝗥🍷𝗠𝗨𝗦𝗜𝗖🍷𝗕𝗢𝗧⏤͟͟❥͜͡𝄟⃟🥀](https://t.me/RIDER_MUSIC_bot)
 ━━━━━━━━━━━━━━━━━━━━
 
 
@@ -36,8 +36,7 @@
 
 <p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/THE-VIP-BOY-OP/VIP-ROBOT"> <img src="https://img.shields.io/badge/Deploy%20On%20Heroku-darkred?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
 
-## 𝐇𝐨𝐰 𝐓𝐨 𝐃𝐞𝐩𝐥𝐨𝐲 𝐓𝐮𝐭𝐨𝐫𝐢𝐚𝐥 𝐕𝐢𝐝𝐞𝐨 𝐎𝐧 𝐘𝐨𝐮𝐭𝐮𝐛𝐞 📺
-- [![YouTube Video Views](https://img.shields.io/youtube/views/MF1nsTAN_Ns?label=Tutorial+•+Heroku+•&style=social)](https://youtu.be/MF1nsTAN_Ns)
+
 
 ━━━━━━━━━━━━━━━━━━━━
 
@@ -46,10 +45,10 @@
 </h3>
 
 <p align="center">
-<a href="https://telegram.me/LOVERS_DUNIA"><img src="https://img.shields.io/badge/-Support%20Group-blue.svg?style=for-the-badge&logo=Telegram"></a>
+<a href="https://telegram.me/DOSTO_KI_M3HFIL"><img src="https://img.shields.io/badge/-Support%20Group-blue.svg?style=for-the-badge&logo=Telegram"></a>
 </p>
 <p align="center">
-<a href="https://telegram.me/VIP_CREATORS"><img src="https://img.shields.io/badge/-Support%20Channel-blue.svg?style=for-the-badge&logo=Telegram"></a>
+<a href="https://telegram.me/rider_music_support"><img src="https://img.shields.io/badge/-Support%20Channel-blue.svg?style=for-the-badge&logo=Telegram"></a>
 </p>
 
 ━━━━━━━━━━━━━━━━━━━━
