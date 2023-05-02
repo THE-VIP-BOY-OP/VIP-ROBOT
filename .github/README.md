@@ -21,7 +21,7 @@
   <img src="https://graph.org/file/b5fb1eb295fb40643fda6.jpg">
 </p>
 
-ᴀᴠᴀɪʟᴀʙʟᴇ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ ᴀs [𝄟ॐ❥𝗥𝗜𝗗𝗘𝗥🍷𝗠𝗨𝗦𝗜𝗖🍷𝗕𝗢𝗧⏤͟͟❥͜͡𝄟⃟🥀](https://t.me/RIDER_MUSIC_bot)
+ᴀᴠᴀɪʟᴀʙʟᴇ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ ᴀs [𝄟ॐ❥𝗥𝗜𝗗𝗘𝗥🍷𝗠𝗨𝗦𝗜𝗖🍷𝗕𝗢𝗧⏤͟͟❥͜͡𝄟⃟🥀](http://T.me/Rider_Music_Bot/start)
 ━━━━━━━━━━━━━━━━━━━━
 
 
