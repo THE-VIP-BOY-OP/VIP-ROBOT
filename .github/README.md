@@ -2,7 +2,7 @@
 ### 🌷𝐕𝐈𝐒𝐈𝐓𝐎𝐑𝐒🌷
 
 <!--
-**THE-VIP-BOY-OP/VIP-ROBOT** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+**THE-KNIGHT-RIDER-OP/RIDER-ROBOT** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
 
 <p align="center">
