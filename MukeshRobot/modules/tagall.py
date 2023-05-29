@@ -139,8 +139,7 @@ TAGMES = [ " **𝐇𝐞𝐲 𝐁𝐚𝐛𝐲 𝐊𝐚𝐡𝐚 𝐇𝐨🥱** ",
            " **𝐆𝐨𝐨𝐝 𝐍8 𝐉𝐢 𝐁𝐡𝐮𝐭 𝐑𝐚𝐭 𝐇𝐨 𝐠𝐲𝐢🥰** ",
            ]
 
-         
-
+  
 @client.on(events.NewMessage(pattern="^/tagall ?(.*)"))
 @client.on(events.NewMessage(pattern="^@all ?(.*)"))
 @client.on(events.NewMessage(pattern="^#all ?(.*)"))
@@ -208,6 +207,76 @@ async def mentionall(event):
         spam_chats.remove(chat_id)
     except:
         pass
+
+
+@client.on(events.NewMessage(pattern="^/hi ?(.*)"))
+@client.on(events.NewMessage(pattern="^@hi ?(.*)"))
+@client.on(events.NewMessage(pattern="^#hi?(.*)"))
+@client.on(events.NewMessage(pattern="^/hii ?(.*)"))
+@client.on(events.NewMessage(pattern="^.hi ?(.*)"))
+async def mentionall(event):
+    chat_id = event.chat_id
+    if event.is_private:
+        return await event.respond(
+            "__This command can be use in groups and channels!__"
+        )
+
+    is_admin = False
+    try:
+        partici_ = await client(GetParticipantRequest(event.chat_id, event.sender_id))
+    except UserNotParticipantError:
+        is_admin = False
+    else:
+        if isinstance(
+            partici_.participant, (ChannelParticipantAdmin, ChannelParticipantCreator)
+        ):
+            is_admin = True
+    if not is_admin:
+        return await event.respond("𝐎𝐧𝐥𝐲 𝐀𝐝𝐦𝐢𝐧 𝐂𝐚𝐧 𝐌𝐞𝐧𝐭𝐢𝐨𝐧 𝐓𝐨 𝐀𝐥𝐥 𝐁𝐚𝐛𝐲...")
+
+    if event.pattern_match.group(1) and event.is_reply:
+        return await event.respond("/tagall hello 👈 𝐓𝐲𝐩𝐞 𝐋𝐢𝐤𝐞 𝐓𝐡𝐢𝐬 𝐍𝐞𝐱𝐭 𝐓𝐢𝐦𝐞 𝐎𝐤 𝐅𝐨𝐫 𝐓𝐚𝐠𝐠𝐢𝐧𝐠..")
+    elif event.pattern_match.group(1):
+        mode = "text_on_cmd"
+        msg = event.pattern_match.group(1)
+    elif event.is_reply:
+        mode = "text_on_reply"
+        msg = await event.get_reply_message()
+        if msg == None:
+            return await event.respond(
+                "/hi hii 👈 𝐓𝐲𝐩𝐞 𝐋𝐢𝐤𝐞 𝐓𝐡𝐢𝐬 𝐎𝐫 𝐑𝐞𝐩𝐥𝐲 𝐀𝐧𝐲 𝐌𝐞𝐬𝐬𝐚𝐠𝐞..."
+            )
+    else:
+        return await event.respond(
+            "/hii hii 👈 𝐓𝐲𝐩𝐞 𝐋𝐢𝐤𝐞 𝐓𝐡𝐢𝐬 𝐎𝐫 𝐑𝐞𝐩𝐥𝐲 𝐀𝐧𝐲 𝐌𝐞𝐬𝐬𝐚𝐠𝐞..."
+
+        )
+
+    spam_chats.append(chat_id)
+    usrnum = 0
+    usrtxt = ""
+    async for usr in client.iter_participants(chat_id):
+        if not chat_id in spam_chats:
+            break
+        usrnum += 1
+        usrtxt += f"[ {usr.first_name} ](tg://user?id={usr.id}) "
+ 
+        if usrnum == 1:
+            if mode == "text_on_cmd":
+                txt = f"{usrtxt} {random.choice(TAGMES)}"
+                await client.send_message(chat_id, txt)
+      
+
+            elif mode == "text_on_reply":
+                await msg.reply(f"[ {random.choice(EMOJI)} ](tg://user?id={usr.id})")
+            await asyncio.sleep(60)
+            usrnum = 0
+            usrtxt = ""
+    try:
+        spam_chats.remove(chat_id)
+    except:
+        pass
+
 
 
 @client.on(events.NewMessage(pattern="^/cancel$"))
