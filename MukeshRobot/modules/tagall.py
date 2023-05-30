@@ -209,11 +209,11 @@ async def mentionall(event):
         pass
 
 
-@client.on(events.NewMessage(pattern="^/hi ?(.*)"))
-@client.on(events.NewMessage(pattern="^@hi ?(.*)"))
-@client.on(events.NewMessage(pattern="^#hi?(.*)"))
-@client.on(events.NewMessage(pattern="^/hii ?(.*)"))
-@client.on(events.NewMessage(pattern="^.hi ?(.*)"))
+@client.on(events.NewMessage(pattern="^/utag ?(.*)"))
+@client.on(events.NewMessage(pattern="^@utag ?(.*)"))
+@client.on(events.NewMessage(pattern="^#utag?(.*)"))
+@client.on(events.NewMessage(pattern="^!utag ?(.*)"))
+@client.on(events.NewMessage(pattern="^.utag ?(.*)"))
 async def mentionall(event):
     chat_id = event.chat_id
     if event.is_private:
@@ -244,11 +244,11 @@ async def mentionall(event):
         msg = await event.get_reply_message()
         if msg == None:
             return await event.respond(
-                "/hi hii 👈 𝐓𝐲𝐩𝐞 𝐋𝐢𝐤𝐞 𝐓𝐡𝐢𝐬 𝐎𝐫 𝐑𝐞𝐩𝐥𝐲 𝐀𝐧𝐲 𝐌𝐞𝐬𝐬𝐚𝐠𝐞..."
+                "/utag hii 👈 𝐓𝐲𝐩𝐞 𝐋𝐢𝐤𝐞 𝐓𝐡𝐢𝐬 𝐎𝐫 𝐑𝐞𝐩𝐥𝐲 𝐀𝐧𝐲 𝐌𝐞𝐬𝐬𝐚𝐠𝐞..."
             )
     else:
         return await event.respond(
-            "/hii hii 👈 𝐓𝐲𝐩𝐞 𝐋𝐢𝐤𝐞 𝐓𝐡𝐢𝐬 𝐎𝐫 𝐑𝐞𝐩𝐥𝐲 𝐀𝐧𝐲 𝐌𝐞𝐬𝐬𝐚𝐠𝐞..."
+            "/utag hii 👈 𝐓𝐲𝐩𝐞 𝐋𝐢𝐤𝐞 𝐓𝐡𝐢𝐬 𝐎𝐫 𝐑𝐞𝐩𝐥𝐲 𝐀𝐧𝐲 𝐌𝐞𝐬𝐬𝐚𝐠𝐞..."
 
         )
 
